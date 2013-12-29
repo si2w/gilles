@@ -60,9 +60,10 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 /* ----------------------------------------
    PAGES
 --------------------------------------     */
-#badge{position:absolute;height:592px;width:883px;left:0;right:0;margin-left:auto;margin-right:auto;background-color:#ff0000;top:5%;background:url('../images/logo_accueil.png') no-repeat}
-/*#badge{position:relative;height:592px;width:883px;background:url('../images/logo_accueil.png') no-repeat;background-position: 0 75px;left:-15%;margin:auto;top:10%;padding-top: 7.5%}*/
-.badge-text{padding-left:10px;position:relative;text-align:center;top:18%;}
+#badge{z-index:2;position:absolute;height:592px;width:883px;left:0;right:0;margin-left:auto;margin-right:auto;background-color:#ff0000;top:5%;background:url('../images/logo_accueil.png') no-repeat}
+#badge-text{z-index:3;position:absolute;text-align:center;top:90%;left:0;right:0;margin-left:auto;margin-right:auto;}
+#badge-text a{color:#4D4D4D;font-weight: 700; font-size:1.5em;background-color:#FFF;margin-left:-10%;padding:5px;border: 3px solid #FC0}
+#rectangle{z-index:1;position:absolute;height:100%;width:190px;background-color:rgba(255,204,0,0.6);left:30%;}
 #about,#contact,#home,#skills,#portfolio{min-height: 100%; width:100%;}
 #about{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg2.jpg) right bottom fixed no-repeat;background-size:cover;}
 #contact{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg3.jpg) right bottom fixed no-repeat;background-size:cover;}
