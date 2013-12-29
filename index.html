@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Mono - A One Page Template</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <link rel="stylesheet" href="css/slimbox2.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!--[if IE]>
+                        <style type="text/css">
+                    #about,#portfolio,#skills,#contact {background:url(images/bg_02-61929.jpg%20right%20bottom%20fixed%20no-repeat#fff}
+                    </style>
+                                <![endif]-->
+        <!--[if IE 7]>
+            <style type="text/css">
+                body { overflow: visible}
+                .divider-01,.divider-02 {padding-top: 0; margin-top:0}
+                #badge{background-position: 0 20px; padding-top: 1%}
+            </style>
+       <![endif]-->
+        <!--[if IE 6]>
+            <style type="text/css">
+               html {overflow-y:hidden;}
+               body {overflow-y:auto;}
+               #background-image {position:absolute; z-index:-1;}
+            </style>
+       <![endif]-->
+        <script src="js/jquery.localscroll-min.js" type="text/javascript"></script>
+        <script src="js/jquery.scrollTo-min.js" type="text/javascript"></script>
+        <script src="js/slimbox2.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(document).ready(function () {
+                $.localScroll.defaults.axis = 'y';
+                $.localScroll();
+            });
+            //]]>
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    // get the height of #wrap
+                    var h = $(window).height();
+                    var y = $(window).scrollTop();
+                    if ( y > (h) ){
+                        $("#navigation").fadeIn("slow");
+                    } else {
+                        $('#navigation').fadeOut('slow');
+                    }
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <!-- Start Home -->
+        <div id="background-image">
+            <img src="images/bg.jpg" width="100%" alt="Image"/>
+        </div>
+        <div id="home" class="layout">
+            <div id="badge">
+                <div class="badge-text">
+                    <span class="hello">Hello, I'm</span>
+                    <div class="divider-01">
+                    </div>
+                    <span class="subtitle">An easy to use, one <br/>page template</span>
+                    <div class="divider-02">
+                    </div>
+                    <a class="activemenu" href="#about"><img src="images/icon_arrow.png" alt="About me" width="32" height="32"/></a>
+                </div>
+            </div>
+        </div>
+        <!-- End Home -->
+        <!-- Start Navigation -->
+        <div id="navigation">
+            <div class="nav-left">
+                <div class="icons">
+                    <ul>
+                        <li><a class="activemenu" href="#home"><img src="images/icon_home.png" alt="Home" width="27" height="23" class="on"/></a></li>
+                        <li><a class="activemenu" href="#about"><img src="images/icon_info.png" alt="About Me" width="27" height="23" class="on"/></a></li>
+                        <li><a class="activemenu" href="#portfolio"><img src="images/icon_portfolio.png" alt="Portfolio" width="27" height="23" class="on"/></a></li>
+                        <li><a class="activemenu" href="#skills"><img src="images/icon_skills.png" alt="Skills" width="27" height="23" class="on"/></a></li>
+                        <li><a class="activemenu" href="#contact"><img src="images/icon_mail.png" alt="Get in Touch!" width="27" height="23" class="on"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href=""><img src="images/icon_flickr.png" width="20" height="22" alt="flickr" title="flickr" class="on"/></a></li>
+                    <li><a href=""><img src="images/icon_twitter_grey.png" width="20" height="22" alt="twitter" title="twitter" class="on"/></a></li>
+                    <li><a href=""><img src="images/icon_fb_grey.png" width="20" height="22" alt="fb" title="fb" class="on"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="nav-background-overlay">
+            test
+        </div>
+        <!-- End Navigation -->
+        <!-- Start About -->
+        <div id="about" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>About Mono</h1>
+                        </div>
+                        <div class="rightcolumn-one-third">
+                            <ul>
+                                <li><img src="images/logo_circle.png" alt="Mono Logo"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Highlight yourself or your team. Nam condimentum mauris pellent esque nisi blandit. Erat volutpat aliquam id nisi ultrices risus.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                       <!-- Start Left Column -->
+                                <div class="leftcolumn-one-third">
+                                    <ul>
+                                      <li class="center"><img src="images/about_no1.png" width="220" height="220" alt="Image"/></li>
+                                      <li class="center underlined12">
+                                        <h3>A Bit About Mono</h3></li>
+                                        <li><p>
+                                            Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Phasellus pulvinar elit id metus viverra consectetur. Morbi tincidunt, magna sit amet vestibulum suscipit id nisi.                                        </p>
+                                        </li>
+                                    </ul>
+                              </div>
+                                <!-- End Left Column -->
+                                <!-- Start Middle Column -->
+                                <div class="middlecolumn-one-third">
+                                    <ul>
+                                       <li class="center">
+                                       <img src="images/about_no1.png" width="220" height="220" alt="Image"/>                                       </li>
+                                      <li class="center underlined12">
+                                        <h3>What We Do</h3>
+                                        </li>
+                                        <li><p>
+                                            Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Phasellus pulvinar elit id metus viverra consectetur. Morbi tincidunt, magna sit amet vestibulum suscipit hendrerit cursus.
+                                        </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Middle Column -->
+                                <!-- Start Right Column -->
+                                <div class="rightcolumn-one-third">
+                                    <ul>
+                                       <li class="center">
+                                       <img src="images/about_no1.png" width="220" height="220" alt="Image"/>                                       </li>
+                                      <li class="center underlined12">
+                                        <h3>Our Motivation</h3>
+                                        </li>
+                                        <li><p>
+                                            Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Phasellus pulvinar elit id metus viverra consectetur. Morbi tincidunt, magna sit amet vestibulum suscipit nam congue.
+                                        </p>
+                                      </li>
+                                    </ul>
+                                </div>
+                                <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+        <!-- Start Portfolio -->
+        <div id="portfolio" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>Recent Projects</h1>
+                        </div>
+                        <div class="rightcolumn-one-third">
+                            <ul>
+                                <li><img src="images/logo_circle.png" alt="Mono Logo"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Check out some of my work. Vivamus consectetur hendrerit libero, vitae cursus odio elementum quis. Erat volutpat aliquam id nisi.</h2>
+                    <!-- End Feature Text -->
+                    <!-- Start SlimBox / Title multi-image gallery as "lightbox-YourDescriptionHere" -->
+                    <div class="slimbox-thumbs-med">
+                        <!-- Start Row 1 -->
+                        <ul class="slimbox-thumbs-med-list">
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide1.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project One</span></span>
+                                        <img src="images/slimbox/thumb1.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide2.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Two</span></span>
+                                        <img src="images/slimbox/thumb2.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide3.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Three</span></span>
+                                        <img src="images/slimbox/thumb3.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide4.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Four</span></span>
+                                        <img src="images/slimbox/thumb4.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- End Row 1 -->
+                        <!-- Start Row 2 -->
+                        <ul class="slimbox-thumbs-med-list">
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide5.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Five</span></span>
+                                        <img src="images/slimbox/thumb5.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide6.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Six</span></span>
+                                        <img src="images/slimbox/thumb6.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide1.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Seven</span></span>
+                                        <img src="images/slimbox/thumb1.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide2.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Eight</span></span>
+                                        <img src="images/slimbox/thumb2.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- End Row 2 -->
+                        <!-- Start Row 3 -->
+                        <ul class="slimbox-thumbs-med-list">
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide3.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Nine</span></span>
+                                        <img src="images/slimbox/thumb3.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide4.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Ten</span></span>
+                                        <img src="images/slimbox/thumb4.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide5.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Eleven</span></span>
+                                        <img src="images/slimbox/thumb5.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumbnail-overlay-wrapper">
+                                    <a class="rollover" href="images/slimbox/slide6.jpg" rel="lightbox-photos" title="Your caption goes right here">
+                                        <span class="thumbnail-overlay"></span>
+                                        <span class="roll-overlay"><span class="caption">Project Twelve</span></span>
+                                        <img src="images/slimbox/thumb6.jpg" alt="Thumbnail" width="230" height="170"/></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- End Row 3 -->
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <!-- End Slimbox -->
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio -->
+        <!-- Start Skills -->
+        <div id="skills" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>Specialities</h1>
+                        </div>
+                        <div class="rightcolumn-one-third">
+                            <ul>
+                                <li><img src="images/logo_circle.png" alt="Mono Logo"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Highlight your areas of expertise. Nam condimentum mauris pellent esque nisi blandit. Erat volutpat aliquam id nisi ultrices risus.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <!-- Start Left Column -->
+                        <div class="leftcolumn-one-third">
+                            <ul>
+                                <li class="underlined18 bottom_margin21">
+                                    <div class="large-icon left">
+                                    </div>
+                                    <h3>odio elemen</h3>
+                                    <p>
+                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit.Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
+                                    </p>
+                                </li>
+                                <li class="underlined18">
+                                    <div class="large-icon left">
+                                    </div>
+                                    <h3>erat volutt</h3>
+                                    <p>
+                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit.Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Left Column -->
+                        <!-- Start Middle Column -->
+                        <div class="middlecolumn-one-third">
+                            <ul>
+                                <li class="underlined18 bottom_margin21">
+                                    <div class="large-icon left">
+                                    </div>
+                                    <h3>Aliquam nisi</h3>
+                                    <p>
+                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
+                                    </p>
+                                </li>
+                                <li class="underlined18">
+                                    <div class="large-icon left">
+                                    </div>
+                                    <h3>hendre cursus</h3>
+                                    <p>
+                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Middle Column -->
+                        <!-- Start Right Column -->
+                        <div class="rightcolumn-one-third">
+                            <ul id="services-graph">
+                                <li>
+                                    <div class="bar-container">
+                                        <div class="bar-80">
+                                            <p>
+                                                Lorem <span class="percentage">80%</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bar-container">
+                                        <div class="bar-70">
+                                            <p>
+                                                Ultrices<span class="percentage">70%</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bar-container">
+                                        <div class="bar-90">
+                                            <p>
+                                                Elementum <span class="percentage">90%</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bar-container">
+                                        <div class="bar-100">
+                                            <p>
+                                                Biben<span class="percentage">100%</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bar-container">
+                                        <div class="bar-80">
+                                            <p>
+                                                Ipsum<span class="percentage">80%</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Skills -->
+        <!-- Start Contact -->
+        <div id="contact" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>Drop Me a Line</h1>
+                        </div>
+                        <div class="rightcolumn-one-third">
+                            <ul>
+                                <li><img src="images/logo_circle.png" alt="Mono Logo"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Want to talk about about an upcoming project? Send me a message! Aliquam id nisi ultrices risus bibe indum porta erat volutpat.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <!-- Start Left Column -->
+                        <div class="leftcolumn-two-thirds">
+                            <!-- Start Contact Form -->
+                            <h3>Send us a Message</h3>
+                            <div style="margin-top:-2px;">
+                                <form method="post" action="contact.php" id="contactform" class="contactform">
+                                    <span class="label">Name</span>
+                                    <input type="text" id="name" name="name" class="field text"/>
+                                    <span class="label">Email</span>
+                                    <input type="text" id="email" name="email" class="field text" value=""/>
+                                    <span class="label">Subject</span>
+                                    <input type="text" id="subject" name="subject" class="field textbig" value=""/>
+                                    <span class="label">Message</span>
+                                    <textarea rows="25" cols="45" id="comments" name="comments" class="field"></textarea>
+                                    <input type="submit" id="submit" value="send message" class="field button"/>
+                                </form>
+                            </div>
+                            <!-- End Contact Form -->
+                        </div>
+                        <!-- End Left Column -->
+                        <!-- Start Right Column -->
+                        <div class="rightcolumn-one-third">
+                            <ul>
+                                <li class="bottom_margin25">
+                                    <h3>I'm Available!</h3>
+                                    <p>
+                                        I am currently taking on new projects. Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit libero, vitae cursus odio elementum quis. Aliquam id nisi ultrices risus bibendum porta.
+                                    </p>
+                                </li>
+                            </ul>
+                            <h3>Contact Info</h3>
+                            <ul>
+                                <li class="underlined10"><a href=""><img src="images/icon_phone.png" alt="phone" title="Phone" class="img_spacer"/>888 555 1234</a></li>
+                                <li class="underlined10"><a href=""><img src="images/icon_small_mail.png" alt="email" title="Email" class="img_spacer2"/>info@yoktemplates.com</a></li>
+                                <li class="underlined10"><a href=""><img src="images/icon_twitter.png" alt="twitter" title="Twitter" class="img_spacer2"/>@yokTemplates</a></li>
+                                <li class="underlined10"><a href=""><img src="images/icon_fb.png" alt="facebook" title="Facebook" class="img_spacer2"/>Find me on Facebook</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+    </body>
+</html>
+<!-- Localized -->

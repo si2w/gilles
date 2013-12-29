@@ -1,0 +1,16 @@
+/* SLIMBOX */
+
+#lbOverlay{background-color:#E6E6E6;cursor:pointer;height:100%;left:0;position:fixed;top:0;width:100%;z-index:9999;}
+#lbCenter,#lbBottomContainer{overflow:hidden;position:absolute;z-index:9999;}
+.lbLoading{background: url(../images/loading.gif) no-repeat center;}
+#lbImage{background-repeat:no-repeat;border:0 solid #000;left:0;padding-bottom:5px;position:absolute;top:0;}
+#lbPrevLink,#lbNextLink{border:none;display:block;position:absolute;top:0;width:50%;}
+#lbPrevLink{left:0;}
+#lbPrevLink:hover{background:transparent url(../images/prevlabel.gif) no-repeat 0 15%;}
+#lbNextLink{right:0;}
+#lbNextLink:hover{background:transparent url(../images/nextlabel.gif) no-repeat 100% 15%;}
+#lbBottom{background:transparent url(../images/overlay_transparent_white.png) repeat;border-top-style:none;color:#444;font-family:Tahoma, Arial, Geneva, Helvetica, sans-serif;font-size:.7em;line-height:1.4em;margin-top:0;padding:10px;text-align:left;}
+#lbCloseLink{background:transparent url(../images/bt_close.png) no-repeat center;border:none;display:block;float:right;height:22px;margin-right:-25px;width:66px;}
+#lbCaption,#lbNumber{margin-right:0;}
+#lbCaption{font-weight:700;}
+#lbNumber{color:#888;font-size:.9em;margin-top:-3px;}

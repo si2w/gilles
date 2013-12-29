@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document for Mono v.1   Global Stylesheet */
+
+/* ----------------------------
+   BASIC
+--------------------------     */
+
+body{color:#fff;font-family:'Lato', tahoma, sans serif; height:100%;margin:0;overflow:auto;height:100%; margin:0; padding:0;}
+html{height:100%; margin:0; padding:0;}
+#background-image {position:fixed; top:0; left:0; width:100%; z-index:0; }
+.clearfix{clear:both;display:block;}
+
+
+/* ----------------------------
+   TEXT STYLES
+--------------------------     */
+h1{color:#000;font-family:'Lato', impact, sans serif;font-size:4.3em;font-weight:400;letter-spacing:0;line-height:1em;margin-bottom:20px;margin-top:10px;text-transform:uppercase;}
+h2{border-bottom:#c2c2c2 solid 1px;border-top:#c2c2c2 solid 1px;color:#7F7F7F;font-family:"Lato", Times, Serif;font-size:1.9em;font-style:italic;font-weight:400;line-height:1.1em;margin-bottom:25px;margin-top:0;padding-bottom:25px;padding-top:25px;text-align:left;text-transform:none;}
+h3{font-size:1.35em;font-weight:700;letter-spacing:.2px;margin-bottom:6px;margin-top:0;text-transform:uppercase;}
+h4{font-size:1.1em;font-weight:700;letter-spacing:.2px;margin-bottom:6px;margin-top:0;text-transform:uppercase;}
+h5{font-size:1em;font-weight:700;letter-spacing:.2px;margin-bottom:6px;margin-top:0;text-transform:none;}
+h6{font-size:1.2em;font-weight:700;letter-spacing:.2px;margin-bottom:2px;margin-top:0;text-transform:none;}
+p{font-size:.85em;line-height:1.35em;margin:0;}
+a{color:#fff;font-size:.8em;font-weight:700;margin:0;text-decoration:none;}
+a:visited{color:#fff;}
+.dark{color:#444;}
+.italic{border-bottom:0;color:#04759b;font-size:1.2em;font-style:italic;}
+.light{color:#CFF;}
+.underline{text-decoration:underline;}
+
+
+.hello{display:block;font-family:'Lato', impact, sans serif;font-size:2.9em;font-weight:400;letter-spacing:1px;line-height:1em; margin-bottom:120px; text-transform:uppercase;}
+.subtitle{display:inline;font-family:"Lato", Times, Serif;font-size:2.7em;font-weight:normal; font-style:italic;font-weight:200;letter-spacing:-.5px;line-height:1em;text-transform:none;}
+.divider-01 {background:url(../images/rule_transparent.png) repeat-x bottom center;margin-left:auto; margin-right:auto; padding-top:15px;margin-bottom:5px;width:375px;}
+.divider-02 {background:url(../images/rule_transparent.png) repeat-x bottom center;margin-left:auto; margin-right: auto;margin-bottom:24px;margin-top:12px;padding-top:5px;width:192px;}
+
+
+/* ----------------------------
+   COMMON STYLES
+--------------------------     */
+img{border:0;}
+ul{list-style-type:none;margin:0;padding-left:0;}
+.blockquote{background:url('images/blockquote1.png') no-repeat top left;font-family:"Lato", serif;font-size:.8em;font-style:italic;height:auto;line-height:1.8em;min-height:100px;padding-left:50px;}
+.blockquote span{font-family:"Lato", Arial, Helvetica, sans-serif;font-size:.7em;font-style:italic;line-height:3em;}
+.img_spacer{margin-right:12px;margin-top:5px;}
+.img_spacer2{margin-right:12px;}
+.bottom_margin0{margin-bottom:0;}
+.bottom_margin6{margin-bottom:6px;}
+.bottom_margin11{margin-bottom:11px;}
+.bottom_margin21{margin-bottom:21px;}
+.bottom_margin25{margin-bottom:25px;}
+.padding_bottom10{padding-bottom:210px;}
+.left{float:left;}
+.center{margin-left:auto;margin-right:auto;text-align:center;}
+.underlined10{background:url('../images/horizontal-rule.png')repeat-x bottom left;padding:10px 0 14px;}
+.underlined12{background:url('../images/horizontal-rule.png')repeat-x bottom left;margin-bottom:12px;padding:16px 0 6px;}
+.underlined18{background:url('../images/horizontal-rule.png')repeat-x bottom left;padding:0 0 18px;}
+.large-icon{background:url('../images/icon_check.png') no-repeat;margin-bottom:-5px;margin-right:-10px;margin-top:3px;padding-left:42px;padding-top:32px;}
+
+/* ----------------------------------------
+   PAGES
+--------------------------------------     */
+#badge{background:url('../images/homepage_badge.png') no-repeat;background-position: 0 100px; height:495px;left:25%;margin:auto;position:relative;top:10%;width:475px; padding-top: 7.5%}
+.badge-text{padding-left:10px;position:relative;text-align:center;top:18%;}
+#about,#contact,#home,#skills,#portfolio{min-height: 100%; width:100%;}
+#about{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg2.jpg) right bottom fixed no-repeat;background-size:cover;}
+#contact{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg3.jpg) right bottom fixed no-repeat;background-size:cover;}
+#portfolio{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg4.jpg) right bottom fixed no-repeat;background-size:cover;}
+#skills{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg5.jpg) right bottom fixed no-repeat;background-size:cover;}
+.header{height:85px;margin:0;padding-top:10px;text-align:left;width:100%;}
+.header ul{float:right;list-style-type:none;}
+.bottom_rule {border-bottom:#333333 5px solid; width:920px; height:20px; margin-left:auto; margin-right:auto; position:relative; margin-top:5px;}
+.layout{position:relative;}
+.container{margin:auto;position:relative;top:13%;width:920px;}
+.inside{background: url('../images/overlay_solid.png') repeat;margin-top:0;padding:40px;}
+.inside a:active{color:#000;font-size:.8em;font-weight:700;}
+.inside a:hover{color:#000;font-size:.8em;font-weight:700;}
+.overlay{background:url('../images/overlay_diagonal.png') repeat;height:1100px;width:100%;z-index:0;}
+.leftcolumn-half{float:left;width:47%;}
+.leftcolumn-one-third{float:left;width:31%;}
+.rightcolumn-half{float:right;width:47%;}
+.rightcolumn-half li img{border:0;margin-bottom:-1px;margin-right:20px;}
+.leftcolumn-two-thirds{float:left;width:65%;}
+.rightcolumn-one-third{float:right;width:31%;}
+.middlecolumn-one-third{float:left;margin-left:30px;width:31%;}
+
+/* ----------------------------------------
+   NAVIGATION
+--------------------------------------     */
+#navigation{border-top:#555 solid 3px; background:url(../images/overlay_transparent_white.png) repeat; border-bottom: #666;position:fixed;text-align:left;top:0px; width:920px; left: 50%; margin: 0 0 0 -460px; z-index:100;display: none;}
+#navigation a{color:#666;font-size:.75em;font-weight:400;text-decoration:underline;}
+#navigation a:active{color:#444;}
+#navigation a:hover{font-weight:700;color:#333}
+.icons {height:45px;}
+.nav-left{margin-bottom:2px;float:left;width:30%;}
+.nav-left ul{float:left;list-style-type:none;}
+.nav-left li img{border:0;margin-left:15px; margin-top:12px;}
+.nav-right{float:right; margin-top:5px;width:70%;}
+.nav-right ul{float:right;list-style-type:none; margin-top:8px;margin-right:10px;}
+.nav-right li{margin-right:4px;margin-left:2px;}
+.nav-left li,.nav-right li{display:inline;}
+img.on:hover{filter:alpha(opacity=50);opacity:.5;}
+
+/* ----------------------------
+   SERVICES GRAPH 
+--------------------------     */
+#services-graph{list-style-type:none;margin-top:10px;padding:0;}
+#services-graph li{margin-bottom:16px;position:relative;}
+#services-graph li p{color:#afe9fc;font-size:.7em;font-weight:700;left:10px;position:absolute;top:13px; text-transform:uppercase;}
+.percentage{color:#72d9fc;font-family:'PT Sans', tahoma, sans serif;font-size:1.4em;font-weight:700;margin-left:4px; letter-spacing:0; font-style:normal;}
+.bar-container{background:url('../images/overlay_solid_dark.png') repeat;height:47px;width:100%;moz-border-radius:6px; border-radius:6px;}
+.bar-20{background:url('../images/overlay_solid_darkest.png') repeat; height:47px;width:20%;-moz-border-radius:4px; border-radius:4px;}
+.bar-40{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:40%;-moz-border-radius:4px; border-radius:4px;}
+.bar-60{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:60%;-moz-border-radius:4px; border-radius:4px;}
+.bar-70{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:70%;-moz-border-radius:4px; border-radius:4px;}
+.bar-80{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:80%;-moz-border-radius:4px; border-radius:4px;}
+.bar-90{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:90%;-moz-border-radius:4px; border-radius:4px;}
+.bar-100{background:url('../images/overlay_solid_darkest.png') repeat;height:47px;width:100%;-moz-border-radius:4px; border-radius:4px;}
+
+/* --------------------------------------------------
+   SLIMBOX / SEE SLIMBOX2.CSS FOR ADDITIONAL STYLING
+---------------------------------------------------     */
+.slimbox-thumbs-med{float:left;margin:0px;background:url(../images/overlay_solid.png) repeat;}
+.slimbox-thumbs-med li{float:left;height:170px;margin:0;position:relative;width:230px;}
+.thumbnail-overlay-wrapper{float:left; /* important */  position:relative; /* important(so we can absolutely position the description div */ }  
+.thumbnail-overlay {position:absolute; /* absolute position (so we can position it where we want)*/  
+                    bottom:0px; /* position will be on bottom */  
+                    left:0px;  
+                    width:230px;
+                    height:170px;  
+                    /* styling below */  
+                    background-color:#0099cc;  /* color of the overlay*/ 
+                    opacity:0.6; /* transparency */  
+                    filter:alpha(opacity=60); /* IE transparency */
+                    z-index:1;}
+
+a.rollover:hover{border:0;}
+a.rollover:hover .roll-overlay{background:url(../images/tn_overlay_image.png) center no-repeat #000;-moz-transition-duration:.5s;-o-transition-duration:.5s;-webkit-transition:0 .5s;opacity:.8;visibility:visible;filter:alpha(opacity=80);height:170px;position:absolute;width:230px;z-index:100;}
+a.rollover img{display:block;}
+.caption{position:absolute;height:30px;line-height:30px;width:100%;z-index:3;text-indent:-9999em;color:#fff;font-size:18px;/* used px here b/c with an em size the animation looks odd*/font-weight:700;letter-spacing:.2px;text-transform:uppercase;bottom:45px;text-align:center;overflow:hidden;}
+a.rollover:hover .caption{text-indent:0;}
+
+
+/* ----------------------------
+   CONTACT FORM ELEMENTS
+--------------------------     */
+
+.field{-moz-border-radius:4px; border-radius:4px;display:block;font-family:Tahoma, Arial, Helvetica, sans-serif;margin-bottom:10px;padding-left:8px;padding-top:0;}
+.text,.textbig, textarea {background:url('../images/overlay_solid_light.png') repeat;border:1px solid #e4f7ff;}
+.text,.textbig{height:25px;margin-top:2px;width:98%;}
+textarea{font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:.9em;height:154px;width:98%;}
+.button{-webkit-font-smoothing:antialiased;background:#000000;border:none;color:#fff;cursor:pointer;font-family:"Lato", Times, Serif;font-size:.9em;font-style:italic;font-weight:400;line-height:1em; letter-spacing:-.5px;padding:3px 5px 5px;text-transform:none;width:100px; margin-top:15px;}
+.error_message{background:#ccc url('../images/error.gif') no-repeat 10px center;border:1px solid #000;color:#000;display:block;height:20px;line-height:20px;padding:3px 10px 3px 35px;}
+.label{color:#fff;font-size:.7em;}
+.required{color:#006699;font-family:"Lato", Times, Serif;font-size:.6em;font-style:italic;}
+.backslash{padding-top:40px;color:#006699;font-family:"Lato", Times, Serif;font-size:.55em;font-style:italic;letter-spacing:-1px;}
+#success_page h3{background:url(../images/success.gif) no-repeat;padding-left:20px;}
+.loader{float:left;padding:0 10px;}
