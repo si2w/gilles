@@ -80,11 +80,21 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 .overlay{background:url('../images/overlay_diagonal.png') repeat;height:1100px;width:100%;z-index:0;}
 .leftcolumn-half{float:left;width:47%;}
 .leftcolumn-one-third{float:left;width:31%;}
+.leftcolumn-one-quarter{float:left;width:23%;}
 .rightcolumn-half{float:right;width:47%;}
 .rightcolumn-half li img{border:0;margin-bottom:-1px;margin-right:20px;}
 .leftcolumn-two-thirds{float:left;width:65%;}
+.leftcolumn-tree-quarters{float:left;width:77%;}
+.rightcolumn-tree-quarters{float:right;width:77%;}
 .rightcolumn-one-third{float:right;width:31%;}
+.rightcolumn-one-quarter{float:right;width:23%;}
 .middlecolumn-one-third{float:left;margin-left:30px;width:31%;}
+.right-all{width:100%;text-align:right;}
+.left-all{width:100%;text-align:left;}
+.videos{z-index:2;color:#000;min-height:281px;width:100%;}
+.videos p{margin-bottom:10px;font-size:1em;}
+.videos ul{list-style-type:circle;margin-top:10px;margin-bottom:10px;padding-right:10px;}
+/*#horizontal-bar-1{z-index:1;position:relative;width:100%;height:30px;background-color:rgba(255,204,0,0.6);}*/
 
 /* ----------------------------------------
    NAVIGATION
