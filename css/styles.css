@@ -106,7 +106,11 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 /* ----------------------------------------
    NAVIGATION
 --------------------------------------     */
-#navigation{border-top:#555 solid 3px; background:url(../images/overlay_transparent_white.png) repeat; border-bottom: #ffcc00 solid 3px;position:fixed;text-align:left;top:0px; width:920px; left: 50%; margin: 0 0 0 -460px; z-index:100;display: none;}
+#logo{
+  float:left;
+  position:absolute;
+}
+#navigation{background:url(../images/overlay_transparent_white.png) repeat; border-bottom: #ffcc00 solid 5px;position:fixed;text-align:left;top:0px; width:920px; left: 50%; margin: 0 0 0 -460px; z-index:100;display: none;}
 /*#navigation a{color:#666;font-size:.75em;font-weight:400;text-decoration:underline;}
 #navigation a:active{color:#444;}
 #navigation a:hover{font-weight:700;color:#333}
@@ -120,13 +124,14 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 .nav-left li,.nav-right li{display:inline;}*/
 #nav-left{
   float:left;
+  padding-left: 120px;
 }
 #nav-left ul li, #nav-right ul li{
     display: inline-block;
     padding-top:10px;
 }
 
-#nav-left ul li a{
+#nav-left ul li a, #nav-right ul li a{
     display:block; 
     background-position:center top;
     background-repeat:no-repeat;
@@ -147,7 +152,7 @@ ul{list-style-type:none;margin:0;padding-left:0;}
     padding:0;
     width: 155px;
     height: 90px; 
-    padding-top:40px;
+    padding-top:50px;
     text-align:center;
 }
 /*img.on:hover{filter:alpha(opacity=50);opacity:.5;}*/

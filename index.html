@@ -40,6 +40,7 @@
         <script type="text/javascript">
             //<![CDATA[
             $(document).ready(function () {
+                var images = new Array();
                 $.localScroll.defaults.axis = 'y';
                 $.localScroll();
 
@@ -59,7 +60,7 @@
                     return false;
                 });
 
-                $("#nav-left ul li a").hover(function(){
+                $("#nav-left ul li a, #nav-right ul li a").hover(function(){
                     $(this).css("background-image", "url(images/"+$(this)[0].id+"_over.png)")
                 }, function() {
                     var img = $(this).css("background-image");
@@ -70,12 +71,21 @@
                     }  
                 });
 
-                $("#nav-left ul li").each(function( index, el ) {
+                $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
                     $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
                 });
 
-                $("#nav-left ul li a").click(function() {
-                     $("#nav-left ul li").each(function( index, el ) {
+                $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
+                    images[index*3] = new Image();
+                    images[index*3+0].src = "images/"+$(':first-child', this)[0].id+".png"; 
+                    images[index*3+1] = new Image();
+                    images[index*3+1].src = "images/"+$(':first-child', this)[0].id+"_over.png"; 
+                    images[index*3+2] = new Image();
+                    images[index*3+2].src = "images/"+$(':first-child', this)[0].id+"_active.png"; 
+                });
+
+                $("#nav-left ul li a, #nav-right ul li a").click(function() {
+                     $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
                         $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
                     });
                     $(this).css("background-image", "url(images/"+$(this)[0].id+"_active.png)");
@@ -123,13 +133,13 @@
             <div id="nav-right">
                 <ul>
                     <li>
-                        <a href="#contact"><img src="images/btn_contact.png"/></a>
+                        <a href="#contact" id="btn_contact"><img src="images/btn_contact.png"/></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/lespetitsriens"><img src="images/btn_facebook.png"/></a>
+                        <a href="https://www.facebook.com/lespetitsriens" id="btn_facebook"><img src="images/btn_facebook.png"/></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/spullenhulp"><img src="images/btn_twitter.png"/></a>
+                        <a href="https://twitter.com/spullenhulp"  id="btn_twitter"><img src="images/btn_twitter.png"/></a>
                     </li>
                 </ul>
             </div>
