@@ -62,11 +62,23 @@
                 $("#nav-left ul li a").hover(function(){
                     $(this).css("background-image", "url(images/"+$(this)[0].id+"_over.png)")
                 }, function() {
-                    $(this).css("background-image", "url(images/"+$(this)[0].id+".png)")
+                    var img = $(this).css("background-image");
+                    
+                    if (img.indexOf("active") == -1)
+                    {
+                        $(this).css("background-image", "url(images/"+$(this)[0].id+".png)");
+                    }  
                 });
 
                 $("#nav-left ul li").each(function( index, el ) {
                     $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
+                });
+
+                $("#nav-left ul li a").click(function() {
+                     $("#nav-left ul li").each(function( index, el ) {
+                        $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
+                    });
+                    $(this).css("background-image", "url(images/"+$(this)[0].id+"_active.png)");
                 });
             });
             //]]>
@@ -89,6 +101,9 @@
         <!-- End Home -->
         <!-- Start Navigation -->
         <div id="navigation">
+            <div id="logo">
+                <img src="images/logo_menu.png"/>
+            </div>
             <div id="nav-left">
                      <ul>
                         <li>
