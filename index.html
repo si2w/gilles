@@ -6,7 +6,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
          <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
-        <link rel="stylesheet" href="css/slimbox2.css" type="text/css"/>
+        <link rel="stylesheet" href="css/pirobox.css" type="text/css"/>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,6 +15,7 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.2.custom.min.js"></script>
         <!--[if IE]>
                         <style type="text/css">
                     #about,#portfolio,#skills,#contact {background:url(images/bg_02-61929.jpg%20right%20bottom%20fixed%20no-repeat#fff}
@@ -36,10 +37,18 @@
        <![endif]-->
         <script src="js/jquery.localscroll-min.js" type="text/javascript"></script>
         <script src="js/jquery.scrollTo-min.js" type="text/javascript"></script>
-        <script src="js/slimbox2.js" type="text/javascript"></script>
+        <script src="js/pirobox_extended_min.js" type="text/javascript"></script>
         <script type="text/javascript">
             //<![CDATA[
             $(document).ready(function () {
+                $(document).ready(function() {
+                    $().piroBox_ext({
+                        piro_speed : 900,
+                        bg_alpha : 0.1,
+                        piro_scroll : true //pirobox always positioned at the center of the page
+                    });
+                });
+
                 var images = new Array();
                 $.localScroll.defaults.axis = 'y';
                 $.localScroll();
@@ -160,7 +169,7 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Highlight yourself or your team. Nam condimentum mauris pellent esque nisi blandit. Erat volutpat aliquam id nisi ultrices risus.</h2>
+                    <h2>Découvrez les différents projets sociaux dans lesquels nous investissons</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                        <!-- Start Left Column -->
@@ -321,8 +330,8 @@
             </div>
         </div>
         <!-- End About -->
-        <!-- Start Economie Sociale 1 -->
-        <div id="economie_sociale_1" class="layout">
+        <!-- Start Economie Sociale -->
+        <div id="economie_sociale" class="layout">
             <div class="overlay">
                 <div class="container">                 
                     <!-- Start Header -->
@@ -331,136 +340,92 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>«Les Petits Riens »  est une économie sociale car tous les bénéfices générés par son activité servent à financer ses actions sociales de lutte contre la pauvreté et l’exclusion sociale en Belgique.</h2>
+                    <h2>Julien Coppens est le directeur général des Petits Riens depuis 2002. Diplômé en ingénierie commerciale, son rêve a toujours été de « changer le monde »… </h2>
                     <!-- End Feature Text -->
                     <div>
-                         <!--div id="horizontal-bar-1"></div-->
-                        <div class="videos">
-                            <div class="leftcolumn-half">
-                                <iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
-                            <div class="rightcolumn-one-third">
-                                <p>
-                                    L’entreprise compte 5 actions sociales : 
+                         <!-- Start Right Column -->
+
+                                <div class="row">
+                                     <div class="col-md-8">
+                                        <iframe src="//player.vimeo.com/video/79902085" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                     </div> 
+                                     <div class="col-md-4 black">
+                                        <p>La particularité des Petits Riens est probablement son système économique. On peut dire en effet qu’elle fonctionne comme une boucle fermée ; tous les bénéfices engendrés sont réinjectés au sein même de l’entreprise pour financer les actions sociales. C’est ce qu’on appelle l’économie sociale.</p><br/>
+                                     </div> 
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <br/>
+                                        <p class="black">Actuellement, l’ASBL compte cinq projets sociaux, eux-mêmes composés de plusieurs <a href="#nos_projets" class="black">actions sociales</a>. Ceux-ci ont été créés selon 2 critères :
+                                            <ul class="list">
+                                                <li>Répondre à la demande du public</li>
+                                                <li>Chercher le meilleur retour social sur investissement</li>
+                                            </ul><br/>
+
+                                        <p class="black">L’entreprise compte environ 750 employés, parmi ceux-ci, il y a des bénévoles, des salariés, mais aussi des sans-abris, des personnes en contrat d’insertion, etc.</p><br/>
+
+                                        <p class="black">L’ambition de l’ASBL est de faire de l’économie autrement, au service de l’homme ! Chaque projet est inscrit dans une vision à long terme et c’est ce qui fait la spécificité de chacun.</p>
+                                    </div>
+                                </div>
+
+                                <div class="leftcolumn-one-third">
                                     <ul>
-                                        <li>
-                                            la maison d’accueil pour sans-abri,
+                                        <li class="center">
+                                            <a href="recolte.html" rel="content-620-400"  class="pirobox_gall1">
+                                                <img src="images/bulle-recolte.png" width="220" height="220" alt="Image"/>
+                                            </a>
                                         </li>
-                                        <li>
-                                            @ Home 18-24,
-                                        </li>
-                                        <li>
-                                            Un toit à Soi, 
-                                        </li>
-                                        <li>
-                                            Syner’Sante, 
-                                        </li>
-                                        <li>
-                                            Syner’Sante, 
-                                        </li>
-                                        <li>
-                                            le Centre d’Accueil Social Abbé Froidure,
-                                        </li>
-                                        <li>
-                                            le Pôle insertion.
+                                        <li class="center underlined12">
+                                        <h3>
+                                            <a href="recolte.html" rel="content-310-260"  class="pirobox_gall1 black">
+                                                RECOLTE
+                                            </a>
+                                        </h3>
                                         </li>
                                     </ul>
-                                </p>
-
-                                <p>
-                                Ces actions ont été crées en fonction de 2 critères importants:
-                                <ul>
-                                    <li>Créer des projets en fonction de la demande du public.</li>
-                                    <li>Chercher le meilleur retour social sur investissement</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="videos">
-                            <div class="leftcolumn-one-quarter">
-                                <p>
-                                “Les Petits Riens” emploie à peu près 750 personnes, cela correspond à 200 salariés, à ce nombre s’ajoute une séries de publics différents qui sont en insertion. Les différents publics de cette entreprise sociale sont donc des sans abris, des personnes en contrat d’insertion et des bénévoles.</p>
-                            </div> 
-                             <div class="rightcolumn-tree-quarters">
-                                <iframe src="//player.vimeo.com/video/82542938" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div> 
-                        </div>
+                                </div>
+                                <!-- End Right Column -->
+                         <div class="middlecolumn-one-third">
+                                    <ul>
+                                      <li class="center">
+                                        <a href="http://player.vimeo.com/video/18361415" class="pirobox" rel="iframe-900-350" title="Intro" rev="9">
+                                            <img src="images/bulle-tri.png" width="220" height="220" alt="Image"/>
+                                        </a>
+                                      </li>
+                                      <li class="center underlined12">
+                                        <h3>
+                                            <a href="http://player.vimeo.com/video/18361415" class="pirobox black" rel="iframe-900-350" title="Intro" rev="9">
+                                                TRI
+                                            </a>
+                                        </h3>
+                                      </li>
+                                    </ul>
+                              </div>
+                                <!-- End Left Column -->
+                                <!-- Start Middle Column -->
+                                <div class="rightcolumn-one-third">
+                                    <ul>
+                                        <li class="center">
+                                            <a href="http://player.vimeo.com/video/18361415" class="pirobox" rel="iframe-900-350" title="Intro" rev="9">
+                                                <img src="images/bulle-vente.png" width="220" height="220" alt="Image"/>
+                                            </a>
+                                        </li>
+                                        <li class="center underlined12">
+                                        <h3>
+                                            <a href="http://player.vimeo.com/video/18361415" class="pirobox black" rel="iframe-900-350" title="Intro" rev="9">
+                                                VENTE
+                                            </a>
+                                        </h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Middle Column -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Economie Sociale 1 -->
-        <!-- Start Economie Sociale 2 -->
-        <div id="economie_sociale_2" class="layout">
-            <div class="overlay">
-                <div class="container">                 
-                    <!-- Start Header -->
-                    <div class="header">
-                            <h1>ECONOMIE SOCIALE</h1>
-                    </div>
-                    <!-- End Header -->
-                    <!-- Start Feature Text -->
-                    <h2>«Les Petits Riens »  est une économie sociale car tous les bénéfices générés par son activité servent à financer ses actions sociales de lutte contre la pauvreté et l’exclusion sociale en Belgique.</h2>
-                    <!-- End Feature Text -->
-                    <div>
-                         <!--div id="horizontal-bar-1"></div-->
-                        <div class="videos">
-                            <div class="leftcolumn-half">
-                                <iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div>
-                            <div class="rightcolumn-one-third">
-                                <p>
-                                    L’entreprise compte 5 actions sociales : 
-                                    <ul>
-                                        <li>
-                                            la maison d’accueil pour sans-abri,
-                                        </li>
-                                        <li>
-                                            @ Home 18-24,
-                                        </li>
-                                        <li>
-                                            Un toit à Soi, 
-                                        </li>
-                                        <li>
-                                            Syner’Sante, 
-                                        </li>
-                                        <li>
-                                            Syner’Sante, 
-                                        </li>
-                                        <li>
-                                            le Centre d’Accueil Social Abbé Froidure,
-                                        </li>
-                                        <li>
-                                            le Pôle insertion.
-                                        </li>
-                                    </ul>
-                                </p>
-
-                                <p>
-                                Ces actions ont été crées en fonction de 2 critères importants:
-                                <ul>
-                                    <li>Créer des projets en fonction de la demande du public.</li>
-                                    <li>Chercher le meilleur retour social sur investissement</li>
-                                </ul>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="videos">
-                            <div class="leftcolumn-one-quarter">
-                                <p>
-                                “Les Petits Riens” emploie à peu près 750 personnes, cela correspond à 200 salariés, à ce nombre s’ajoute une séries de publics différents qui sont en insertion. Les différents publics de cette entreprise sociale sont donc des sans abris, des personnes en contrat d’insertion et des bénévoles.</p>
-                            </div> 
-                             <div class="rightcolumn-tree-quarters">
-                                <iframe src="//player.vimeo.com/video/82542938" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Portfolio -->
+        <!-- End Economie Sociale -->
         <!-- Start Maison Accueil -->
         <div id="maison_accueil" class="layout">
             <div class="overlay">
