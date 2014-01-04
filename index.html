@@ -4,8 +4,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Mono - A One Page Template</title>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <link rel="stylesheet" href="css/slimbox2.css" type="text/css"/>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <!--[if IE]>
                         <style type="text/css">
@@ -61,7 +69,7 @@
             <div id="badge">
             </div>
             <div id="badge-text">
-                <a href="#about">DECOUVREZ-NOUS</a>
+                <a href="#nos_projets">DECOUVREZ-NOUS</a>
             </div>
             <div id="rectangle">
             </div>
@@ -93,7 +101,7 @@
         </div>
         <!-- End Navigation -->
         <!-- Start About -->
-        <div id="about" class="layout">
+        <div id="nos_projets" class="layout">
             <div class="overlay">
                 <div class="container">
                     <!-- Start Header -->
@@ -110,12 +118,23 @@
                        <!-- Start Left Column -->
                                 <div class="leftcolumn-one-third">
                                     <ul>
-                                      <li class="center"><img src="images/about_no1.png" width="220" height="220" alt="Image"/></li>
+                                      <li class="center">
+                                        <a href="#maison_accueil">
+                                            <img src="images/bulle-maison-accueil.png" width="220" height="220" alt="Image"/>
+                                        </a>
+                                      </li>
                                       <li class="center underlined12">
-                                        <h3>LA MAISON D'ACCUEIL</h3></li>
+                                        <h3>
+                                            <a href="#maison_accueil">
+                                                LA MAISON D'ACCUEIL
+                                            </a>
+                                        </h3>
+                                      </li>
                                         <li>
                                             <p>
-                                                Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus.
+                                                <a href="#maison_accueil">
+                                                    La Maison d’Accueil des Petits Riens est la plus grande de Belgique. Ce centre pour sans-abris peut héberger jusqu’à 120 personnes.
+                                                </a>
                                             </p>
                                         </li>
                                     </ul>
@@ -125,13 +144,13 @@
                                 <div class="middlecolumn-one-third">
                                     <ul>
                                        <li class="center">
-                                       <img src="images/about_no1.png" width="220" height="220" alt="Image"/>                                       </li>
+                                       <img src="images/bulle@home.png" width="220" height="220" alt="Image"/>                                       </li>
                                       <li class="center underlined12">
                                         <h3>@HOME 18 - 24</h3>
                                         </li>
                                         <li>
                                             <p>
-                                                Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus.
+                                                @home-18-24 est la deuxième maison d’accueil des Petits Riens. Celle-ci est entièrement dédiée aux jeunes.
                                             </p>
                                         </li>
                                     </ul>
@@ -141,13 +160,13 @@
                                 <div class="rightcolumn-one-third">
                                     <ul>
                                        <li class="center">
-                                       <img src="images/about_no1.png" width="220" height="220" alt="Image"/>                                       </li>
+                                       <img src="images/bulle-epicerie-sociale.png" width="220" height="220" alt="Image"/>                                       </li>
                                       <li class="center underlined12">
                                         <h3>L'EPICERIE SOCIALE</h3>
                                         </li>
                                         <li>
                                             <p>
-                                                Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus.
+                                                Claude nous raconte en image comment fonctionne et à quoi sert l’épicerie sociale, venez la découvrir !
                                             </p>
                                         </li>
                                     </ul>
@@ -157,12 +176,12 @@
                         </div>
                         <div class="leftcolumn-one-third">
                                     <ul>
-                                      <li class="center"><img src="images/about_no1.png" width="220" height="220" alt="Image"/></li>
+                                      <li class="center"><img src="images/bulle-airederien.png" width="220" height="220" alt="Image"/></li>
                                       <li class="center underlined12">
                                         <h3>L'AIRE DE RIEN</h3></li>
                                         <li>
                                             <p>
-                                                Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus.
+                                                 Francesco assure, avec son équipe, le suivi des anciens résidents de la Maison d’Accueil dans ce café social.
                                             </p>
                                         </li>
                                     </ul>
@@ -172,13 +191,13 @@
                                 <div class="middlecolumn-one-third">
                                     <ul>
                                        <li class="center">
-                                       <img src="images/about_no1.png" width="220" height="220" alt="Image"/>                                       </li>
+                                       <img src="images/bulle-horizon.png" width="220" height="220" alt="Image"/>                                       </li>
                                       <li class="center underlined12">
                                         <h3>HORIZON</h3>
                                         </li>
                                         <li>
                                             <p>
-                                                Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus.
+                                               Le centre Horizon offre une formation en électroménager et électromécanique à une quinzaine de personnes chaque année.
                                             </p>
                                         </li>
                                     </ul>
@@ -188,13 +207,22 @@
                                 <div class="rightcolumn-one-third">
                                     <ul>
                                        <li class="center">
-                                       <img src="images/about_no1.png" width="220" height="220" alt="Image"/>                                       </li>
+                                            <a href="#economie_sociale">
+                                                <img src="images/bulle-economie-sociale.png" width="220" height="220" alt="Image"/>
+                                            </a>
+                                        </li>
                                       <li class="center underlined12">
-                                        <h3>L'ECONOMIE SOCIALE</h3>
+                                        <h3>
+                                            <a href="#economie_sociale">
+                                                L'ECONOMIE SOCIALE
+                                            </a>
+                                        </h3>
                                         </li>
                                         <li>
                                             <p>
-                                                Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus.
+                                                <a href="#economie_sociale">
+                                                    Au travers des paroles de Julien Coppens, vous découvrirez la particularité du système économique des Petits Riens. 
+                                                </a>
                                             </p>
                                         </li>
                                     </ul>
@@ -207,8 +235,78 @@
             </div>
         </div>
         <!-- End About -->
-        <!-- Start Portfolio -->
-        <div id="portfolio" class="layout">
+        <!-- Start Economie Sociale 1 -->
+        <div id="economie_sociale_1" class="layout">
+            <div class="overlay">
+                <div class="container">                 
+                    <!-- Start Header -->
+                    <div class="header">
+                            <h1>ECONOMIE SOCIALE</h1>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>«Les Petits Riens »  est une économie sociale car tous les bénéfices générés par son activité servent à financer ses actions sociales de lutte contre la pauvreté et l’exclusion sociale en Belgique.</h2>
+                    <!-- End Feature Text -->
+                    <div>
+                         <!--div id="horizontal-bar-1"></div-->
+                        <div class="videos">
+                            <div class="leftcolumn-half">
+                                <iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                            <div class="rightcolumn-one-third">
+                                <p>
+                                    L’entreprise compte 5 actions sociales : 
+                                    <ul>
+                                        <li>
+                                            la maison d’accueil pour sans-abri,
+                                        </li>
+                                        <li>
+                                            @ Home 18-24,
+                                        </li>
+                                        <li>
+                                            Un toit à Soi, 
+                                        </li>
+                                        <li>
+                                            Syner’Sante, 
+                                        </li>
+                                        <li>
+                                            Syner’Sante, 
+                                        </li>
+                                        <li>
+                                            le Centre d’Accueil Social Abbé Froidure,
+                                        </li>
+                                        <li>
+                                            le Pôle insertion.
+                                        </li>
+                                    </ul>
+                                </p>
+
+                                <p>
+                                Ces actions ont été crées en fonction de 2 critères importants:
+                                <ul>
+                                    <li>Créer des projets en fonction de la demande du public.</li>
+                                    <li>Chercher le meilleur retour social sur investissement</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="videos">
+                            <div class="leftcolumn-one-quarter">
+                                <p>
+                                “Les Petits Riens” emploie à peu près 750 personnes, cela correspond à 200 salariés, à ce nombre s’ajoute une séries de publics différents qui sont en insertion. Les différents publics de cette entreprise sociale sont donc des sans abris, des personnes en contrat d’insertion et des bénévoles.</p>
+                            </div> 
+                             <div class="rightcolumn-tree-quarters">
+                                <iframe src="//player.vimeo.com/video/82542938" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Economie Sociale 1 -->
+        <!-- Start Economie Sociale 2 -->
+        <div id="economie_sociale_2" class="layout">
             <div class="overlay">
                 <div class="container">                 
                     <!-- Start Header -->
@@ -277,114 +375,47 @@
             </div>
         </div>
         <!-- End Portfolio -->
-        <!-- Start Skills -->
-        <div id="skills" class="layout">
+        <!-- Start Maison Accueil -->
+        <div id="maison_accueil" class="layout">
             <div class="overlay">
                 <div class="container">
                     <!-- Start Header -->
                     <div class="header">
                         <div class="leftcolumn-two-thirds">
-                            <h1>Specialities</h1>
+                            <h1>MAISON D'ACCUEIL</h1>
                         </div>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Highlight your areas of expertise. Nam condimentum mauris pellent esque nisi blandit. Erat volutpat aliquam id nisi ultrices risus.</h2>
+                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
-                        <!-- Start Left Column -->
-                        <div class="leftcolumn-one-third">
-                            <ul>
-                                <li class="underlined18 bottom_margin21">
-                                    <div class="large-icon left">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
                                     </div>
-                                    <h3>odio elemen</h3>
-                                    <p>
-                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit.Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
-                                    </p>
-                                </li>
-                                <li class="underlined18">
-                                    <div class="large-icon left">
+                                    <div class="col-md-6">
+                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
                                     </div>
-                                    <h3>erat volutt</h3>
-                                    <p>
-                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit.Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Left Column -->
-                        <!-- Start Middle Column -->
-                        <div class="middlecolumn-one-third">
-                            <ul>
-                                <li class="underlined18 bottom_margin21">
-                                    <div class="large-icon left">
+                                </div>
+                                <div class="row">
+                                     <div class="col-md-4">
+                                        <img src="images/maison_accueil_1.jpg"/>
                                     </div>
-                                    <h3>Aliquam nisi</h3>
-                                    <p>
-                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
-                                    </p>
-                                </li>
-                                <li class="underlined18">
-                                    <div class="large-icon left">
+                                    <div class="col-md-8">
+                                        &nbsp;
                                     </div>
-                                    <h3>hendre cursus</h3>
-                                    <p>
-                                        Aliquam erat volutpat. Aliquam id nisi ultrices risus bibendum porta. In a orci metus. Nam congue, dui hendrerit cursus vestibulum elit. Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Middle Column -->
-                        <!-- Start Right Column -->
-                        <div class="rightcolumn-one-third">
-                            <ul id="services-graph">
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-80">
-                                            <p>
-                                                Lorem <span class="percentage">80%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-70">
-                                            <p>
-                                                Ultrices<span class="percentage">70%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-90">
-                                            <p>
-                                                Elementum <span class="percentage">90%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-100">
-                                            <p>
-                                                Biben<span class="percentage">100%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="bar-container">
-                                        <div class="bar-80">
-                                            <p>
-                                                Ipsum<span class="percentage">80%</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+
+                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+
+                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                            </div>
                         </div>
                         <!-- End Right Column -->
                         <div class="clearfix">
@@ -395,7 +426,215 @@
                 </div>
             </div>
         </div>
-        <!-- End Skills -->
+        <!-- End Maison Accueil -->
+        <!-- Start Home-18-24 -->
+        <div id="home_18_24" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>@HOME 18-24</h1>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
+                                    </div>
+                                    <div class="col-md-6">
+                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="col-md-4">
+                                        <img src="images/maison_accueil_1.jpg"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        &nbsp;
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+
+                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+
+                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Home-18-24 -->
+        <!-- Start Aire De Rien -->
+        <div id="aire_de_rien" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>L'AIRE DE RIEN</h1>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
+                                    </div>
+                                    <div class="col-md-6">
+                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="col-md-4">
+                                        <img src="images/maison_accueil_1.jpg"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        &nbsp;
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+
+                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+
+                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Aire de Rien -->
+        <!-- Start Horizon -->
+        <div id="horizon" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>HORIZON</h1>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
+                                    </div>
+                                    <div class="col-md-6">
+                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="col-md-4">
+                                        <img src="images/maison_accueil_1.jpg"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        &nbsp;
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+
+                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+
+                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Maison Horizon -->
+        <!-- Start CONCOURS -->
+        <div id="concours" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>CONCOURS</h1>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
+                                    </div>
+                                    <div class="col-md-6">
+                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                     <div class="col-md-4">
+                                        <img src="images/maison_accueil_1.jpg"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        &nbsp;
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="col-md-4">
+                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+
+                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+
+                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Maison Accueil -->
         <!-- Start Contact -->
         <div id="contact" class="layout">
             <div class="overlay">
@@ -459,6 +698,7 @@
             </div>
         </div>
         <!-- End Contact -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
 <!-- Localized -->
