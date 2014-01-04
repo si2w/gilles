@@ -67,10 +67,15 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 #rectangle{z-index:1;position:absolute;height:100%;width:190px;background-color:rgba(255,204,0,0.6);left:30%;margin:0;padding:0;}
 #home,#nos_projets,#economie_sociale_1,#economie_sociale_2,#maison_accueil,#home_18_24,#aire_de_rien,#horizon,#epicerie_sociale,#concours,#contact{min-height: 100%; width:100%;}
 #nos_projets{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg2.jpg) right bottom fixed no-repeat;background-size:cover;}
-#economie_sociale_1{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg4.jpg) right bottom fixed no-repeat;background-size:cover;}
-#economie_sociale_2{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg4.jpg) right bottom fixed no-repeat;background-size:cover;}
-#maison_accueil{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg5.jpg) right bottom fixed no-repeat;background-size:cover;}
-#contact{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg3.jpg) right bottom fixed no-repeat;background-size:cover;}
+#economie_sociale_1{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg3.jpg) right bottom fixed no-repeat;background-size:cover;}
+#economie_sociale_2{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg3.jpg) right bottom fixed no-repeat;background-size:cover;}
+#maison_accueil{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg4.jpg) right bottom fixed no-repeat;background-size:cover;}
+#home_18_24{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg5.jpg) right bottom fixed no-repeat;background-size:cover;}
+#aire_de_rien{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg6.jpg) right bottom fixed no-repeat;background-size:cover;}
+#horizon{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg7.jpg) right bottom fixed no-repeat;background-size:cover;}
+#epicerie_sociale{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg8.jpg) right bottom fixed no-repeat;background-size:cover;}
+#concours{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg9.jpg) right bottom fixed no-repeat;background-size:cover;}
+#contact{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg10.jpg) right bottom fixed no-repeat;background-size:cover;}
 .header{height:85px;margin:0;padding-top:0;text-align:left;width:100%;}
 .header ul{float:right;list-style-type:none;}
 .bottom_rule {border-bottom:#333333 5px solid; width:920px; height:20px; margin-left:auto; margin-right:auto; position:relative; margin-top:5px;}
@@ -160,7 +165,7 @@ a.rollover:hover .caption{text-indent:0;}
 --------------------------     */
 
 .field{-moz-border-radius:4px; border-radius:4px;display:block;font-family:Tahoma, Arial, Helvetica, sans-serif;margin-bottom:10px;padding-left:8px;padding-top:0;}
-.text,.textbig, textarea {background:url('../images/overlay_solid_light.png') repeat;border:1px solid #e4f7ff;}
+.text,.textbig, textarea {background-color:#fefefe; border:1px solid #fefefe;}
 .text,.textbig{height:25px;margin-top:2px;width:98%;}
 textarea{font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:.9em;height:154px;width:98%;}
 .button{-webkit-font-smoothing:antialiased;background:#000000;border:none;color:#fff;cursor:pointer;font-family:"Lato", Times, Serif;font-size:.9em;font-style:italic;font-weight:400;line-height:1em; letter-spacing:-.5px;padding:3px 5px 5px;text-transform:none;width:100px; margin-top:15px;}

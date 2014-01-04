@@ -42,11 +42,7 @@
             $(document).ready(function () {
                 $.localScroll.defaults.axis = 'y';
                 $.localScroll();
-            });
-            //]]>
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
+
                 $(window).scroll(function(){
                     // get the height of #wrap
                     var h = $(window).height();
@@ -57,7 +53,13 @@
                         $('#navigation').fadeOut('slow');
                     }
                 });
-            })
+
+                $("#btnSubmit").click(function(){
+                    window.location.replace("mailto:gillidel@hotmail.com?subject="+$("#subject").val()+"&body="+$("#comments").val());
+                    return false;
+                });
+            });
+            //]]>
         </script>
     </head>
     <body>
@@ -521,16 +523,17 @@
                     <div class="inside">
                         <div class="row">
                             <div class="col-md-4">
-                                <p>Une des plus grandes causes d’exclusion est le manque de lien social. Pour pallier à ce problème, le département post-hébergement a été créé. L’Aire de Rien, ainsi que Un Toit à Soi, dépendent de ce service. Tous deux ont pour mission d’assurer le suivi des anciens résidents de la Maison d’Accueil.</p><br/>
+                                <p>Fondé en 2009, le café peut accueillir une quarantaine de personnes et est reconnu comme un centre de jour. Il est ouvert du lundi au vendredi de 11h à 15h pour assurer un repas chaud aux anciens résidents, et les weekends pour proposer des activités multiples.</p><br/>
 
                                 <p>Avec son équipe, Francesco travaille d’arrache-pied pour reconstruire des liens sociaux autour d’un repas, d’un café ou de diverses activités culturelles et culinaires. Ils aident les personnes à se réinsérer dans la vie active, à trouver un logement et à se sociabiliser.</p>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-1">
+                                &nbsp;
+                            </div>
+                            <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p>
-                                            Fondé en 2009, le café peut accueillir une quarantaine de personnes et est reconnu comme un centre de jour. Il est ouvert du lundi au vendredi de 11h à 15h pour assurer un repas chaud aux anciens résidents, et les weekends pour proposer des activités multiples. 
-                                        </p><br/>
+                                        <p>Une des plus grandes causes d’exclusion est le manque de lien social. Pour pallier à ce problème, le département post-hébergement a été créé. L’Aire de Rien, ainsi que Un Toit à Soi, dépendent de ce service. Tous deux ont pour mission d’assurer le suivi des anciens résidents de la Maison d’Accueil.</p><br/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -565,31 +568,23 @@
                     <h2>Véronique Brasseur est la coordinatrice du centre Horizon, l’atelier de formation des Petits Riens. Plusieurs stagiaires sont accueillis chaque année pour y apprendre le métier d’électromécanicien.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
-                        <div class="row">
-                            <div class="col-md-8">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
-                                    </div>
-                                    <div class="col-md-6">
-                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
+                                    <div class="col-md-12">
+                                        <p>Horizon est un centre de formation dédié aux résidents de la Maison d’Accueil, mais aussi aux demandeurs d’emplois externes. Le but est d’acquérir une formation professionnelle de dépannage en électroménager et électromécanique.</p><br/>
+
+                                        <p>Cet atelier donne une chance à ces personnes de se réinsérer dans le monde du travail. La formation dure un an, alliant cours pratiques et théoriques, avec en complément, un mois de stage afin de mettre en pratique tout ce qui a été appris.</p><br/>
                                     </div>
                                 </div>
                                 <div class="row">
                                      <div class="col-md-4">
-                                        <img src="images/maison_accueil_1.jpg"/>
+                                        <br/><br/><p>En 2012, sur les 33 stagiaires, 37% ont réussi à trouver un emploi ou à être engagés dans une entreprise. A ce jour, il y a 14 stagiaires en formation.</p><br/>
+
+                                        <p>A savoir : toutes les machines réparées par l’atelier sont revendues dans les magasins des Petits Riens et garanties 6 mois.</p>
                                     </div>
                                     <div class="col-md-8">
-                                        &nbsp;
+                                        <iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                     </div>
                                 </div>                            
-                            </div>
-                            <div class="col-md-4">
-                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
-
-                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
-
-                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
                             </div>
                         </div>
                         <!-- End Right Column -->
@@ -602,58 +597,6 @@
             </div>
         </div>
         <!-- End Maison Horizon -->
-        <!-- Start CONCOURS -->
-        <div id="concours" class="layout">
-            <div class="overlay">
-                <div class="container">
-                    <!-- Start Header -->
-                    <div class="header">
-                        <div class="leftcolumn-two-thirds">
-                            <h1>CONCOURS</h1>
-                        </div>
-                    </div>
-                    <!-- End Header -->
-                    <!-- Start Feature Text -->
-                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
-                    <!-- End Feature Text -->
-                    <div class="inside">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
-                                    </div>
-                                    <div class="col-md-6">
-                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <div class="col-md-4">
-                                        <img src="images/maison_accueil_1.jpg"/>
-                                    </div>
-                                    <div class="col-md-8">
-                                        &nbsp;
-                                    </div>
-                                </div>                            
-                            </div>
-                            <div class="col-md-4">
-                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
-
-                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
-
-                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
-                            </div>
-                        </div>
-                        <!-- End Right Column -->
-                        <div class="clearfix">
-                        </div>
-                    </div>
-                    <div class="bottom_rule">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Maison Accueil -->
         <!-- Start Epicerie -->
         <div id="epicerie" class="layout">
             <div class="overlay">
@@ -666,34 +609,25 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
+                    <h2>L’épicerie sociale des Petits Riens a fêté ses 5 ans d’existence en 2012. Depuis son ouverture, c’est Claude, un travailleur bénévole, qui la fait vivre et évoluer.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <div class="row">
                             <div class="col-md-8">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.<br/><br/>
-                                    </div>
-                                    <div class="col-md-6">
-                                         La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <div class="col-md-4">
-                                        <img src="images/maison_accueil_1.jpg"/>
-                                    </div>
-                                    <div class="col-md-8">
-                                        &nbsp;
-                                    </div>
-                                </div>                            
+                                <br/><iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                   
                             </div>
                             <div class="col-md-4">
-                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+                                <p>L’épicerie est là pour offrir un petit « coup de pouce »  aux personnes éprouvant des difficultés financières grâce à ses prix réduits. Ainsi, ces personnes peuvent se consacrer à l’effacement de leurs dettes.</p><br/>
 
-                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+                                <p>Ce projet fait partie du CASAF, Centre d’Accueil Social Abbé Froidure, qui est un service d’aide sociale aux familles, basé principalement sur la remise en ordre de papiers administratifs, l’écoute et le suivi psychosocial. </p><br/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Toute personne rencontrant des problèmes financiers peut demander une aide alimentaire au CASAF, ce qui leur donnera l’accès à l’épicerie et donc à un choix de plus de 700 aliments et produits ménagers, revendus entre 53 et 58% du prix d’achat.</p><br/>
 
-                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                                <p>A savoir : l’épicerie sociale est un projet dit « à perte », son coût annuel s’élève à 40 000 €, à charge des Petits Riens qui financent cette action via les dons et le fruit des ventes dans les magasins.
+                                </p>
                             </div>
                         </div>
                         <!-- End Right Column -->
@@ -706,6 +640,56 @@
             </div>
         </div>
         <!-- End Epicerie -->
+        <!-- Start Concours -->
+        <div id="concours" class="layout">
+            <div class="overlay">
+                <div class="container">
+                    <!-- Start Header -->
+                    <div class="header">
+                        <div class="leftcolumn-two-thirds">
+                            <h1>CONCOURS</h1>
+                        </div>
+                    </div>
+                    <!-- End Header -->
+                    <!-- Start Feature Text -->
+                    <h2>Voici notre grand jeu concours, grâce auquel vous aurez la possibilité de remporter 5x2 places pour le prochain défilé des Petits Riens :</h2>
+                    <!-- End Feature Text -->
+                    <div class="inside">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>Pour participer...</h3>
+
+                                <ul>
+                                    <li>
+                                        <img src="images/one.png"> Rends-toi sur notre page Facebook
+                                    </li>
+                                    <li>
+                                        <img src="images/two.png"> Like et partage la page
+                                    </li>
+                                    <li>
+                                        <img src="images/three.png"> Réponds aux questions
+                                    </li>
+                                </ul>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <h3>BONNE CHANCE A TOUTES ET A TOUS !</h3>                   
+                            </div>
+                            <div class="col-md-8">
+                                <iframe src="https://docs.google.com/forms/d/10pyg0rhZMTDGwbDAHn9P-rT_p493FnNfQNHow7n0pco/viewform?embedded=true" width="550" height="500" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+                            </div>
+                        </div>
+                        <!-- End Right Column -->
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                    <div class="bottom_rule">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Concours -->
         <!-- Start Contact -->
         <div id="contact" class="layout">
             <div class="overlay">
@@ -713,50 +697,40 @@
                     <!-- Start Header -->
                     <div class="header">
                         <div class="leftcolumn-two-thirds">
-                            <h1>Drop Me a Line</h1>
+                            <h1>Contact</h1>
                         </div>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Want to talk about about an upcoming project? Send me a message! Aliquam id nisi ultrices risus bibe indum porta erat volutpat.</h2>
+                    <h2>Vous désirez nous contacter ?</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <!-- Start Left Column -->
                         <div class="leftcolumn-two-thirds">
                             <!-- Start Contact Form -->
-                            <h3>Send us a Message</h3>
+                            <h3>Envoyez-nous un message</h3>
                             <div style="margin-top:-2px;">
-                                <form method="post" action="contact.php" id="contactform" class="contactform">
-                                    <span class="label">Name</span>
+                                    <!--span class="label">Nom</span>
                                     <input type="text" id="name" name="name" class="field text"/>
                                     <span class="label">Email</span>
-                                    <input type="text" id="email" name="email" class="field text" value=""/>
-                                    <span class="label">Subject</span>
+                                    <input type="text" id="email" name="email" class="field text" value=""/-->
+                                    <span class="label">Sujet</span>
                                     <input type="text" id="subject" name="subject" class="field textbig" value=""/>
                                     <span class="label">Message</span>
                                     <textarea rows="25" cols="45" id="comments" name="comments" class="field"></textarea>
-                                    <input type="submit" id="submit" value="send message" class="field button"/>
-                                </form>
+                                    <input type="submit" id="btnSubmit" name="#btnSubmit" value="Envoyer" class="field button"/>
                             </div>
                             <!-- End Contact Form -->
                         </div>
                         <!-- End Left Column -->
                         <!-- Start Right Column -->
                         <div class="rightcolumn-one-third">
+                            <h3>Contact</h3>
                             <ul>
-                                <li class="bottom_margin25">
-                                    <h3>I'm Available!</h3>
-                                    <p>
-                                        I am currently taking on new projects. Blandit ut aliquet nisi feugiat. Vivamus consectetur hendrerit libero, vitae cursus odio elementum quis. Aliquam id nisi ultrices risus bibendum porta.
-                                    </p>
-                                </li>
-                            </ul>
-                            <h3>Contact Info</h3>
-                            <ul>
-                                <li class="underlined10"><a href=""><img src="images/icon_phone.png" alt="phone" title="Phone" class="img_spacer"/>888 555 1234</a></li>
-                                <li class="underlined10"><a href=""><img src="images/icon_small_mail.png" alt="email" title="Email" class="img_spacer2"/>info@yoktemplates.com</a></li>
-                                <li class="underlined10"><a href=""><img src="images/icon_twitter.png" alt="twitter" title="Twitter" class="img_spacer2"/>@yokTemplates</a></li>
-                                <li class="underlined10"><a href=""><img src="images/icon_fb.png" alt="facebook" title="Facebook" class="img_spacer2"/>Find me on Facebook</a></li>
+                                <li class="underlined10"><img src="images/icon_phone.png" alt="phone" title="Phone" class="img_spacer"/>02/537.30.26</li>
+                                <li class="underlined10"><a href="mailto:info@petitsriens.be"><img src="images/icon_small_mail.png" alt="email" title="Email" class="img_spacer2"/>info@petitsriens.be</a></li>
+                                <li class="underlined10"><a href="https://twitter.com/spullenhulp"><img src="images/icon_twitter.png" alt="twitter" title="Twitter" class="img_spacer2"/>@Lespetitsriens</a></li>
+                                <li class="underlined10"><a href="https://www.facebook.com/lespetitsriens"><img src="images/icon_fb.png" alt="facebook" title="Facebook" class="img_spacer2"/>Retrouvez-nous sur Facebook</a></li>
                             </ul>
                         </div>
                         <!-- End Right Column -->
@@ -769,7 +743,6 @@
             </div>
         </div>
         <!-- End Contact -->
-        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
 <!-- Localized -->
