@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>Mono - A One Page Template</title>
+        <title>Les Petits Riens</title>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
          <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
@@ -58,6 +58,16 @@
                     window.location.replace("mailto:gillidel@hotmail.com?subject="+$("#subject").val()+"&body="+$("#comments").val());
                     return false;
                 });
+
+                $("#nav-left ul li a").hover(function(){
+                    $(this).css("background-image", "url(images/"+$(this)[0].id+"_over.png)")
+                }, function() {
+                    $(this).css("background-image", "url(images/"+$(this)[0].id+".png)")
+                });
+
+                $("#nav-left ul li").each(function( index, el ) {
+                    $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
+                });
             });
             //]]>
         </script>
@@ -79,22 +89,33 @@
         <!-- End Home -->
         <!-- Start Navigation -->
         <div id="navigation">
-            <div class="nav-left">
-                <div class="icons">
-                    <ul>
-                        <li><a class="activemenu" href="#home"><img src="images/icon_home.png" alt="Home" width="27" height="23" class="on"/></a></li>
-                        <li><a class="activemenu" href="#about"><img src="images/icon_info.png" alt="About Me" width="27" height="23" class="on"/></a></li>
-                        <li><a class="activemenu" href="#portfolio"><img src="images/icon_portfolio.png" alt="Portfolio" width="27" height="23" class="on"/></a></li>
-                        <li><a class="activemenu" href="#skills"><img src="images/icon_skills.png" alt="Skills" width="27" height="23" class="on"/></a></li>
-                        <li><a class="activemenu" href="#contact"><img src="images/icon_mail.png" alt="Get in Touch!" width="27" height="23" class="on"/></a></li>
+            <div id="nav-left">
+                     <ul>
+                        <li>
+                            <a href="#home" id="btn_home"><span>HOME</span></a>
+                        </li>
+                        <li>
+                            <a href="#nos_projets" id="btn_projetssociaux"><span>NOS PROJETS SOCIAUX</span></a>
+                        </li>
+                        <li>
+                            <a href="#economie_sociale_1"  id="btn_economiesociale"><span>ECONOMIE SOCIALE</span></a>
+                        </li>
+                        <li>
+                            <a href="#concours"  id="btn_concours"><span>CONCOURS</span></a>
+                        </li>
                     </ul>
-                </div>
             </div>
-            <div class="nav-right">
+            <div id="nav-right">
                 <ul>
-                    <li><a href=""><img src="images/icon_flickr.png" width="20" height="22" alt="flickr" title="flickr" class="on"/></a></li>
-                    <li><a href=""><img src="images/icon_twitter_grey.png" width="20" height="22" alt="twitter" title="twitter" class="on"/></a></li>
-                    <li><a href=""><img src="images/icon_fb_grey.png" width="20" height="22" alt="fb" title="fb" class="on"/></a></li>
+                    <li>
+                        <a href="#contact"><img src="images/btn_contact.png"/></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/lespetitsriens"><img src="images/btn_facebook.png"/></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/spullenhulp"><img src="images/btn_twitter.png"/></a>
+                    </li>
                 </ul>
             </div>
         </div>
