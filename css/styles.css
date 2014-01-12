@@ -5,7 +5,7 @@
    BASIC
 --------------------------     */
 
-body{color:#fff;font-family:'Lato', tahoma, sans serif; height:100%;margin:0;overflow:auto;height:100%; margin:0; padding:0;}
+body{color:#4d4d4d;font-family:'Lato', tahoma, sans serif; height:100%;margin:0;overflow:auto;height:100%; margin:0; padding:0;}
 html{height:100%; margin:0; padding:0;}
 #background-image {position:fixed; top:0; left:0; width:100%; z-index:0; }
 .clearfix{clear:both;display:block;}
@@ -14,16 +14,16 @@ html{height:100%; margin:0; padding:0;}
 /* ----------------------------
    TEXT STYLES
 --------------------------     */
-h1{color:#000;font-family:'Lato', impact, sans serif;font-size:4.3em;font-weight:400;letter-spacing:0;line-height:1em;margin-bottom:20px;margin-top:10px;text-transform:uppercase;}
+h1{color:#000;font-family:'Lato', impact, sans serif;font-size:4.3em;font-weight:400;letter-spacing:0;line-height:1em;margin-bottom:20px;margin-top:10px;margin-left: 100px;text-transform:uppercase;}
 h2{border-bottom:#c2c2c2 solid 1px;border-top:#c2c2c2 solid 1px;color:#7F7F7F;font-family:"Lato", Times, Serif;font-size:1.9em;font-style:italic;font-weight:400;line-height:1.1em;margin-bottom:25px;margin-top:0;padding-bottom:25px;padding-top:25px;text-align:left;text-transform:none;}
 h3{font-size:1.35em;font-weight:700;letter-spacing:.2px;margin-bottom:6px;margin-top:0;text-transform:uppercase;}
 h4{font-size:1.1em;font-weight:700;letter-spacing:.2px;margin-bottom:6px;margin-top:0;text-transform:uppercase;}
 h5{font-size:1em;font-weight:700;letter-spacing:.2px;margin-bottom:6px;margin-top:0;text-transform:none;}
 h6{font-size:1.2em;font-weight:700;letter-spacing:.2px;margin-bottom:2px;margin-top:0;text-transform:none;}
 p{font-size:1.2em;line-height:1.35em;margin:0;text-align:justify;} /*font-size:.85em;*/
-a{text-decoration:none;color:#fff;}
-a:visited{color:#fff;}
-a:hover{color:#fff;text-decoration:none;}
+a{text-decoration:none;color:#4d4d4d;}
+a:visited{color:#4d4d4d;}
+a:hover{color:#4d4d4d;text-decoration:none;}
 .dark{color:#444;}
 .italic{border-bottom:0;color:#04759b;font-size:1.2em;font-style:italic;}
 .light{color:#CFF;}
@@ -136,13 +136,19 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 }
 #nav-left ul li, #nav-right ul li{
     display: inline-block;
-    padding-top:10px;
+    padding-top:5px;
+}
+
+#nav-left ul li img, #nav-right ul li img{
+    width:35px;
+    height:35px;
 }
 
 #nav-left ul li a, #nav-right ul li a{
     display:block; 
     background-position:center top;
     background-repeat:no-repeat;
+    background-size: 35px;
     color:#4D4D4D;
 }
 
@@ -159,8 +165,8 @@ ul{list-style-type:none;margin:0;padding-left:0;}
     margin:0;
     padding:0;
     width: 155px;
-    height: 90px; 
-    padding-top:50px;
+    height: 60px; 
+    padding-top:35px;
     text-align:center;
 }
 /*img.on:hover{filter:alpha(opacity=50);opacity:.5;}*/

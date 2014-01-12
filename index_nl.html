@@ -85,25 +85,19 @@
                 });
 
                 $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
-                    if($(':first-child', this)[0].id != null)
-                    {
-                        images[index*3] = new Image();
-                        images[index*3+0].src = "images/"+$(':first-child', this)[0].id+".png"; 
-                        images[index*3+1] = new Image();
-                        images[index*3+1].src = "images/"+$(':first-child', this)[0].id+"_over.png"; 
-                        images[index*3+2] = new Image();
-                        images[index*3+2].src = "images/"+$(':first-child', this)[0].id+"_active.png"; 
-                    }
+                    images[index*3] = new Image();
+                    images[index*3+0].src = "images/"+$(':first-child', this)[0].id+".png"; 
+                    images[index*3+1] = new Image();
+                    images[index*3+1].src = "images/"+$(':first-child', this)[0].id+"_over.png"; 
+                    images[index*3+2] = new Image();
+                    images[index*3+2].src = "images/"+$(':first-child', this)[0].id+"_active.png"; 
                 });
 
                 $("#nav-left ul li a, #nav-right ul li a").click(function() {
-                    if($(':first-child', this)[0].id != null)
-                    {
-                        $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
-                            $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
-                        });
-                        $(this).css("background-image", "url(images/"+$(this)[0].id+"_active.png)");
-                    }
+                     $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
+                        $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
+                    });
+                    $(this).css("background-image", "url(images/"+$(this)[0].id+"_active.png)");
                 });
             });
             //]]>
@@ -138,14 +132,14 @@
                             <a href="#nos_projets" id="btn_projetssociaux"><span>NOS PROJETS SOCIAUX</span></a>
                         </li>
                         <li>
-                            <a href="#economie_sociale"  id="btn_economiesociale"><span>ÉCONOMIE SOCIALE</span></a>
+                            <a href="#economie_sociale_1"  id="btn_economiesociale"><span>ECONOMIE SOCIALE</span></a>
                         </li>
                         <li>
                             <a href="#concours"  id="btn_concours"><span>CONCOURS</span></a>
                         </li>
-                         <!--li>
-                            <a href="#nl"  id="btn_nl"><span>NL</span></a>
-                        </li-->
+                         <li>
+                            <a href="index.html"  id="btn_fr"><span>FR</span></a>
+                        </li>
                     </ul>
             </div>
             <div id="nav-right">
@@ -242,7 +236,7 @@
                                         <li class="center underlined12">
                                         <h3>
                                             <a href="#epicerie">
-                                                L'ÉPICERIE SOCIALE
+                                                L'EPICERIE SOCIALE
                                             </a>
                                         </h3>
                                         </li>
@@ -311,20 +305,20 @@
                                 <div class="rightcolumn-one-third">
                                     <ul>
                                        <li class="center">
-                                            <a href="#economie_sociale">
+                                            <a href="#economie_sociale_1">
                                                 <img src="images/bulle-economie-sociale.png" width="220" height="220" alt="Image"/>
                                             </a>
                                         </li>
                                       <li class="center underlined12">
                                         <h3>
-                                            <a href="#economie_sociale">
-                                                L'ÉCONOMIE SOCIALE
+                                            <a href="#economie_sociale_1">
+                                                L'ECONOMIE SOCIALE
                                             </a>
                                         </h3>
                                         </li>
                                         <li>
                                             <p>
-                                                <a href="#economie_sociale">
+                                                <a href="#economie_sociale_1">
                                                     Au travers des paroles de Julien Coppens, vous découvrirez la particularité du système économique des Petits Riens. 
                                                 </a>
                                             </p>
@@ -345,7 +339,7 @@
                 <div class="container">                 
                     <!-- Start Header -->
                     <div class="header">
-                            <h1>ÉCONOMIE SOCIALE</h1>
+                            <h1>ECONOMIE SOCIALE</h1>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
@@ -381,7 +375,7 @@
                                 <div class="leftcolumn-one-third">
                                     <ul>
                                         <li class="center">
-                                            <a href="recolte.html" rel="content-620-400"  class="pirobox_gall1">
+                                            <a href="recolte_nl.html" rel="content-620-400"  class="pirobox_gall1">
                                                 <img src="images/bulle-recolte.png" width="220" height="220" alt="Image"/>
                                             </a>
                                         </li>
@@ -624,7 +618,7 @@
                     <!-- Start Header -->
                     <div class="header">
                         <div class="leftcolumn-two-thirds">
-                            <h1>ÉPICERIE SOCIALE</h1>
+                            <h1>EPICERIE SOCIALE</h1>
                         </div>
                     </div>
                     <!-- End Header -->
