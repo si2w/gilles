@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>Les Petits Riens</title>
+        <title>Spullenhulp</title>
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
          <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
@@ -85,19 +85,25 @@
                 });
 
                 $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
-                    images[index*3] = new Image();
-                    images[index*3+0].src = "images/"+$(':first-child', this)[0].id+".png"; 
-                    images[index*3+1] = new Image();
-                    images[index*3+1].src = "images/"+$(':first-child', this)[0].id+"_over.png"; 
-                    images[index*3+2] = new Image();
-                    images[index*3+2].src = "images/"+$(':first-child', this)[0].id+"_active.png"; 
+                    if($(':first-child', this)[0].id != null)
+                    {
+                        images[index*3] = new Image();
+                        images[index*3+0].src = "images/"+$(':first-child', this)[0].id+".png"; 
+                        images[index*3+1] = new Image();
+                        images[index*3+1].src = "images/"+$(':first-child', this)[0].id+"_over.png"; 
+                        images[index*3+2] = new Image();
+                        images[index*3+2].src = "images/"+$(':first-child', this)[0].id+"_active.png"; 
+                    }
                 });
 
                 $("#nav-left ul li a, #nav-right ul li a").click(function() {
-                     $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
-                        $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
-                    });
-                    $(this).css("background-image", "url(images/"+$(this)[0].id+"_active.png)");
+                    if($(':first-child', this)[0].id != null)
+                    {
+                        $("#nav-left ul li, #nav-right ul li a").each(function( index, el ) {
+                            $(':first', this).css("background-image", "url(images/"+$(':first-child', this)[0].id+".png)"); 
+                        });
+                        $(this).css("background-image", "url(images/"+$(this)[0].id+"_active.png)");
+                    }
                 });
             });
             //]]>
@@ -109,10 +115,10 @@
             <img src="images/bg.jpg" width="100%" alt="Image"/>
         </div>
         <div id="home" class="layout">
-            <div id="badge">
+            <div id="badge-nl">
             </div>
             <div id="badge-text">
-                <a href="#nos_projets">DECOUVREZ-NOUS</a>
+                <a href="#nos_projets">ONTDEK ONS</a>
             </div>
             <div id="rectangle">
             </div>
@@ -121,7 +127,7 @@
         <!-- Start Navigation -->
         <div id="navigation">
             <div id="logo">
-                <img src="images/logo_menu.png"/>
+                <img src="images/logo_menu_nl.png"/>
             </div>
             <div id="nav-left">
                      <ul>
@@ -129,16 +135,13 @@
                             <a href="#home" id="btn_home"><span>HOME</span></a>
                         </li>
                         <li>
-                            <a href="#nos_projets" id="btn_projetssociaux"><span>NOS PROJETS SOCIAUX</span></a>
+                            <a href="#nos_projets" id="btn_projetssociaux"><span>SOCIALE PROJECTEN</span></a>
                         </li>
                         <li>
-                            <a href="#economie_sociale_1"  id="btn_economiesociale"><span>ECONOMIE SOCIALE</span></a>
+                            <a href="#economie_sociale"  id="btn_economiesociale"><span>SOCIALE ECONOMIE</span></a>
                         </li>
                         <li>
-                            <a href="#concours"  id="btn_concours"><span>CONCOURS</span></a>
-                        </li>
-                         <li>
-                            <a href="index.html"  id="btn_fr"><span>FR</span></a>
+                            <a href="#concours"  id="btn_concours"><span>WEDSTRIJD</span></a>
                         </li>
                     </ul>
             </div>
@@ -153,6 +156,9 @@
                     <li>
                         <a href="https://twitter.com/spullenhulp"  id="btn_twitter"><img src="images/btn_twitter.png"/></a>
                     </li>
+                    <li>
+                        <a href="index.html"  id="btn_fr"><img src="images/btn_fr.png"/></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -166,13 +172,13 @@
                 <div class="container">
                     <!-- Start Header -->
                     <div class="header">
-                        <div class="leftcolumn-two-thirds">
-                            <h1>NOS PROJETS</h1>
+                        <div class="leftcolumn-full">
+                            <h1>ONZE PROJECTEN</h1>
                         </div>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Découvrez les différents projets sociaux dans lesquels nous investissons</h2>
+                    <h2>Ontdek alle sociale projecten waarin wij investeren</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                        <!-- Start Left Column -->
@@ -186,14 +192,14 @@
                                       <li class="center underlined12">
                                         <h3>
                                             <a href="#maison_accueil">
-                                                LA MAISON D'ACCUEIL
+                                                <br/>ONTHAALHUIS
                                             </a>
                                         </h3>
                                       </li>
                                         <li>
                                             <p>
                                                 <a href="#maison_accueil">
-                                                    La Maison d’Accueil des Petits Riens est la plus grande de Belgique. Ce centre pour sans-abris peut héberger jusqu’à 120 personnes.
+                                                    Het onthaalhuis van Spullenhulp is het grootste van België. Dit centrum voor daklozen kan tot 120 personen huisvesten.
                                                 </a>
                                             </p>
                                         </li>
@@ -211,14 +217,14 @@
                                         <li class="center underlined12">
                                         <h3>
                                             <a href="#home_18_24">
-                                                @HOME 18 - 24
+                                                <br/>@HOME 18 - 24
                                             </a>
                                         </h3>
                                         </li>
                                         <li>
                                             <p>
                                                 <a href="#home_18_24">
-                                                    @home-18-24 est la deuxième maison d’accueil des Petits Riens. Celle-ci est entièrement dédiée aux jeunes.
+                                                    @home-18-24 is de tweede onthaalhuis van de Spullenhulp. Deze is volledig voor jongeren bestemd.
                                                 </a>
                                             </p>
                                         </li>
@@ -236,14 +242,14 @@
                                         <li class="center underlined12">
                                         <h3>
                                             <a href="#epicerie">
-                                                L'EPICERIE SOCIALE
+                                                SOCIALE KRUIDENIERSWINKEL
                                             </a>
                                         </h3>
                                         </li>
                                         <li>
                                             <p>
                                                 <a href="#epicerie">
-                                                    Claude nous raconte en image comment fonctionne et à quoi sert l’épicerie sociale, venez la découvrir !
+                                                    Claude vertelt ons hoe de kruidenierswinkel werkt en wie het bedient.
                                                 </a>
                                             </p>
                                         </li>
@@ -269,7 +275,7 @@
                                         <li>
                                             <p>
                                                 <a href="#aire_de_rien">
-                                                    Francesco assure, avec son équipe, le suivi des anciens résidents de la Maison d’Accueil dans ce café social.
+                                                    Fransesco verzekert, samen met zijn team, de follow-up van de vroegere bewoners van het onthaalhuis.
                                                 </a>
                                             </p>
                                         </li>
@@ -294,7 +300,7 @@
                                         <li>
                                             <p>
                                                <a href="#horizon">
-                                                    Le centre Horizon offre une formation en électroménager et électromécanique à une quinzaine de personnes chaque année.
+                                                    Het centrum « Horizon » biedt elk jaar een professionele opleiding in elektromechanica aan een vijftiental personen.
                                                 </a>
                                             </p>
                                         </li>
@@ -305,21 +311,21 @@
                                 <div class="rightcolumn-one-third">
                                     <ul>
                                        <li class="center">
-                                            <a href="#economie_sociale_1">
+                                            <a href="#economie_sociale">
                                                 <img src="images/bulle-economie-sociale.png" width="220" height="220" alt="Image"/>
                                             </a>
                                         </li>
                                       <li class="center underlined12">
                                         <h3>
-                                            <a href="#economie_sociale_1">
-                                                L'ECONOMIE SOCIALE
+                                            <a href="#economie_sociale">
+                                                SOCIALE ECONOMIE
                                             </a>
                                         </h3>
                                         </li>
                                         <li>
                                             <p>
-                                                <a href="#economie_sociale_1">
-                                                    Au travers des paroles de Julien Coppens, vous découvrirez la particularité du système économique des Petits Riens. 
+                                                <a href="#economie_sociale">
+                                                    Ontdek wat sociale economie betekent bij Spullenhulp, dankzij Julien Coppens.
                                                 </a>
                                             </p>
                                         </li>
@@ -339,36 +345,37 @@
                 <div class="container">                 
                     <!-- Start Header -->
                     <div class="header">
-                            <h1>ECONOMIE SOCIALE</h1>
+                            <h1>SOCIALE ECONOMIE</h1>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Julien Coppens est le directeur général des Petits Riens depuis 2002. Diplômé en ingénierie commerciale, son rêve a toujours été de « changer le monde »… </h2>
+                    <h2>Julien Coppens is sinds 2002 de directeur van Spullenhulp. Gediplomeerd als commercieel ingenieur, heeft hij altijd gedroomd om « de wereld te veranderen »… </h2>
                     <!-- End Feature Text -->
                     <div>
                          <!-- Start Right Column -->
 
                                 <div class="row">
-                                     <div class="col-md-8">
+                                     <div class="col-md-7">
                                         <iframe src="//player.vimeo.com/video/79902085" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                      </div> 
-                                     <div class="col-md-4 black">
-                                        <p>La particularité des Petits Riens est probablement son système économique. On peut dire en effet qu’elle fonctionne comme une boucle fermée ; tous les bénéfices engendrés sont réinjectés au sein même de l’entreprise pour financer les actions sociales. C’est ce qu’on appelle l’économie sociale.</p><br/>
+                                     <div class="col-md-5 black">
+                                        <p>De particulariteit van Spullenhulp is waarschijnlijk zijn economisch systeem. Men mag zeggen dat het werkt als een gesloten lus : de winst wordt gebruikt om de verschillende sociale projecten te financieren. Dat is wat we sociale economie noemen.</p><br/>
                                      </div> 
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-12">
                                         <br/>
-                                        <p class="black">Actuellement, l’ASBL compte cinq projets sociaux, eux-mêmes composés de plusieurs <a href="#nos_projets" class="black">actions sociales</a>. Ceux-ci ont été créés selon 2 critères :
+                                        <p class="black">Momenteel telt de vzw vijf sociale projecten, zelf bestaande uit verschillende  <a href="#nos_projets" class="black">sociale projecten</a>. Allen werden volgens twee criteria opgericht :
                                             <ul class="list">
-                                                <li>Répondre à la demande du public</li>
-                                                <li>Chercher le meilleur retour social sur investissement</li>
+                                                <li>Voldoen aan de behoeften van hun publiek</li>
+                                                <li>De beste return op investment vinden</li>
                                             </ul><br/>
 
-                                        <p class="black">L’entreprise compte environ 750 employés, parmi ceux-ci, il y a des bénévoles, des salariés, mais aussi des sans-abris, des personnes en contrat d’insertion, etc.</p><br/>
+                                        <p class="black">Het bedrijf telt ongeveer 750 werknemers, waaonder vrijwilligers, arbeiders, maar ook daklozen, personen onder integratiecontracten, enz.</p><br/>
 
-                                        <p class="black">L’ambition de l’ASBL est de faire de l’économie autrement, au service de l’homme ! Chaque projet est inscrit dans une vision à long terme et c’est ce qui fait la spécificité de chacun.</p>
+                                        <p class="black">Het doel van de vereniging is om een andere economie te ontwikkelen, een economie meer gericht op de mens ! Elk project is op een lange visie gesteund, en dat is de specificiteit van elk project.
+</p>
                                     </div>
                                 </div>
 
@@ -381,8 +388,8 @@
                                         </li>
                                         <li class="center underlined12">
                                         <h3>
-                                            <a href="recolte.html" rel="content-310-260"  class="pirobox_gall1 black">
-                                                RECOLTE
+                                            <a href="recolte_nl.html" rel="content-310-260"  class="pirobox_gall1 black">
+                                                VERZAMELEN
                                             </a>
                                         </h3>
                                         </li>
@@ -399,7 +406,7 @@
                                       <li class="center underlined12">
                                         <h3>
                                             <a href="http://player.vimeo.com/video/18361415" class="pirobox black" rel="iframe-900-350" title="Intro" rev="9">
-                                                TRI
+                                                SORTEREN
                                             </a>
                                         </h3>
                                       </li>
@@ -417,7 +424,7 @@
                                         <li class="center underlined12">
                                         <h3>
                                             <a href="http://player.vimeo.com/video/18361415" class="pirobox black" rel="iframe-900-350" title="Intro" rev="9">
-                                                VENTE
+                                                VERKOPEN
                                             </a>
                                         </h3>
                                         </li>
@@ -435,23 +442,23 @@
                 <div class="container">
                     <!-- Start Header -->
                     <div class="header">
-                        <div class="leftcolumn-two-thirds">
-                            <h1>MAISON D'ACCUEIL</h1>
+                        <div class="leftcolumn-tree-quarters">
+                            <h1>ONTHAALHUIS</h1>
                         </div>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Sébastien est éducateur spécialisé de formation et travaille à la Maison d’Accueil depuis plus de 2 ans. Son rôle est d’accueillir les gens en demande d’hébergement et de les encadrer par un suivi psychosocial dans un projet de réinsertion.</h2>
+                    <h2>Sébastien is een opvoeder en werkt sinds meer dan twee jaar in het Onthaalhuis. Zijn functie is om mensen die op zoek zijn naar een slaapplaats op te vangen en ze daarna psychologisch op te volgen.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p>L'objectif de ce centre est d’accueillir des hommes de 20 à 60 ans qui désirent se réinsérer dans la société et retrouver leur autonomie.<br/>Beaucoup viennent de la rue mais pas seulement, certains viennent d’institutions ou ont rencontré des difficultés au niveau familial ou financier. La seule condition pour rentrer à la maison d’accueil est d’être en ordre de papiers sur le territoire belge.</p><br/><br/>
+                                        <p>Het doel van het centrum is om mannen tussen 20 en 60 jaar, die hun onafhankelijkheid wensen terug te vinden, te onthalen. <br/>Velen zijn daklozen, maar er zijn eveneens mannen van instellingen of die familiale of financiële problemen hebben gehad. De enige voorwaarde om in het Onthaalhuis te mogen komen is om in orde te zijn met zijn papieren op het Belgisch grondgebied.</p><br/><br/>
                                     </div>
                                     <div class="col-md-6">
-                                         <p>La Maison d’Accueil est la plus grande du pays, avec une capacité de 120 lits, mais également une des plus anciennes. Une de ses particularités est qu’elle propose un programme de suivi sur le long terme, ce qui permet d’élaborer des projets beaucoup plus construits avec les résidents. <br/>Chaque année, elle héberge environ 330 personnes, pour une durée d’environ 6 mois et demi.</p>
+                                         <p>Met 120 bedden is het Onthaalhuis het grootste van België, het is evenals één van de oudste. Eén van de particulariteiten van dit onthaalhuis is dat ze een programma op lang termijn voorstelt, waardoor projecten met de bewoners kunnen opgebouwd worden.<br/>Per jaar, zijn er ongeveer 330 personen gehuisvest, gedurende een periode van ongeveer 6 maanden en een half.</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -464,11 +471,11 @@
                                 </div>                            
                             </div>
                             <div class="col-md-4">
-                                <p>Sébastien et son équipe observent chaque année environ 45% de bonnes sorties. Par « bonne sortie », ils entendent une remise en ordre administrative, une gestion des dettes s’il y en a, mais surtout, que la personne ait à nouveau accès à un logement et qu’elle puisse à nouveau mettre de l’argent de côté pour les éventuels coups durs.</p><br/>
+                                <p>Sébastien en zijn team stellen elk jaar ongeveer 45% positieve vertrekken vast. Door « positieve vertrekken » bedoelen ze dat de mannen het huis verlaten met administratieve papieren in orde, dat ze hun eventuele schulden niet meer verschuldigd zijn, maar vooral, dat de persoon een huisvesting terug vindt, en dat hij eventueel geld opzij kan zetten voor mogelijke moeilijke momenten.</p><br/>
 
-                                <p>La Maison d’Accueil incarne parfaitement l’esprit qui motive chaque action initiée par l’ASBL : offrir un soutien aux personnes en difficultés, mais également offrir un accompagnement sur la voie de la revalorisation et de l’autonomie.</p><br/>
+                                <p>Het Onthaalhuis is heel representatief van de doeleinden van de vereniging :  hulp bieden aan mensen die moeilijkheden kennen, evenals een begeleiding brengen op het weg naar autonomie.</p><br/>
 
-                                <p>A savoir : de nombreux résidents travaillent dans les magasins. C’est une façon de les réinsérer dans la vie active et de leur redonner un rythme.</p>
+                                <p>Goed om te weten : vele bewoners werken in de winkels van Spullenhulp. Het is een manier om hen te helpen zich te re-integreren in het actieve leven.</p>
                             </div>
                         </div>
                         <!-- End Right Column -->
@@ -493,18 +500,18 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Maïté, assistante sociale et criminologue de formation, dirige @Home 18-24 depuis son ouverture en 2012. Avant d’arriver là, elle était assistante sociale à la Maison d’Accueil, où elle a constaté une augmentation de jeunes sans-abris depuis quelques années. </h2>
+                    <h2>Maïté, sociale assistente en criminologe van opleiding, bestuurt @Home 18-24 sinds zijn opening in 2012. Voorheen was ze opvoedster in het Onthaalhuis, waar ze een toename van dakloze jongeren heeft opgemerkt. Dat is de reden waarom @Home 18-24 zijn deuren heeft geopend in Vorst.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <div class="row">
                             <div class="col-md-12">
-                                <p>Cette maison d’accueil pour les moins de 25 ans a pour objectif de lutter contre la paupérisation croissante des jeunes. Les résidents demandent à y séjourner suite à diverses conséquences : rupture familiale, sortie d’institution spécialisée ou de prison, ou encore orientation par le CPAS.</p><br/><br/>
+                                <p>Dit onthaalhuis voor minder dan 25 jarigen heeft tot doel te strijden tegen de toenemende verarming van de jeugd. De bewoners verblijven er voor verschillende redenen : gesplitste familie, vertrek van een jeugdinstelling of van de gevangenis, of een doorverwijzing door het OCMW.</p><br/><br/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                               <p>@Home 18-24 peut accueillir quinze personnes. Bien plus qu'un hébergement, c'est un projet de réinsertion socioprofessionnelle, à la fois individuel et collectif, qu’on leur propose. Le but principal est d'aider les jeunes à gagner en autonomie et à retrouver une place au sein de notre société. Mais aussi, un rythme de vie, une confiance en eux et un travail ou une formation.</p><br/>
-                               <p>A savoir : actuellement, la plupart des résidents ont repris une formation ou des études et trois d’entre eux ont trouvé un travail.</p><br/>
+                               <p>@Home 18-24 kan tot vijftien personen huisvesten. Het is meer dan een onthaalhuis, het is een socio-professioneel programma om jongeren te helpen. Het voornaamste doel is jongeren te helpen hun autonomie terug te vinden evenals hun plaats in de maatschappij. Maar ook een levensstijl verwerven, een zelfvertrouwen terug te krijgen en een baan of een opleiding te vinden.</p><br/>
+                               <p>Goed om te weten : momenteel volgen de meeste bewoners een opleiding, of lessen. Drie onder hen hebben een werk gevonden.</p><br/>
                             </div>
                              <div class="col-md-8">
                                 <img src="images/at_home.jpg"/>
@@ -532,14 +539,14 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Francesco Caruzo est un des travailleurs sociaux de L’Aire de Rien, le café social de l’ASBL. Cet endroit est d’abord un lieu de rencontre et de partage pour toutes les personnes ayant bénéficié de l’aide des Petits Riens.</h2>
+                    <h2>Francesco Caruzo is een van de maatschappelijke werkers van Aire de Rien , een sociaal café. L’aire de Rien is vooral een plaats van ontmoeting voor alle mensen die  al één keer in hun leven van de hulp van Spullenhulp genoten hebben.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <div class="row">
                             <div class="col-md-4">
-                                <p>Fondé en 2009, le café peut accueillir une quarantaine de personnes et est reconnu comme un centre de jour. Il est ouvert du lundi au vendredi de 11h à 15h pour assurer un repas chaud aux anciens résidents, et les weekends pour proposer des activités multiples.</p><br/>
+                                <p>Opgericht in 2009, werd het café ingericht voor een veertigtal personen en is erkend als een dagcentrum. Het is geopend van maandag tot en met vrijdag van 11u tot 15u, voor een warme maaltijd en in het weekend voor activiteiten.</p><br/>
 
-                                <p>Avec son équipe, Francesco travaille d’arrache-pied pour reconstruire des liens sociaux autour d’un repas, d’un café ou de diverses activités culturelles et culinaires. Ils aident les personnes à se réinsérer dans la vie active, à trouver un logement et à se sociabiliser.</p>
+                                <p>Met zijn team, werkt Francesco hard om sociale banden te creëren. Dit tijdens een maaltijd, een kopje koffie of een culturele of culinaire activiteit. Ze helpen mensen bij het wennen aan hun nieuwe leven en het vinden van  een huisvesting.</p>
                             </div>
                             <div class="col-md-1">
                                 &nbsp;
@@ -547,7 +554,7 @@
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p>Une des plus grandes causes d’exclusion est le manque de lien social. Pour pallier à ce problème, le département post-hébergement a été créé. L’Aire de Rien, ainsi que Un Toit à Soi, dépendent de ce service. Tous deux ont pour mission d’assurer le suivi des anciens résidents de la Maison d’Accueil.</p><br/>
+                                        <p>Een belangrijke oorzaak van uitsluiting is het ontbreken van sociale banden. Om dit probleem te vermijden, werd deze post-afdeling gecreëerd. L’Aire de Rien en un Toit à Soi stellen deze dienst voor. Beide zijn verantwoordelijk voor het toezicht op de vroegere bewoners van het onthaalhuis.</p><br/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -579,21 +586,21 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Véronique Brasseur est la coordinatrice du centre Horizon, l’atelier de formation des Petits Riens. Plusieurs stagiaires sont accueillis chaque année pour y apprendre le métier d’électromécanicien.</h2>
+                    <h2>Veronique Brasseur is de coördinatrice van het Horizon Center, de opleidingsplaats van Spullenhulp. Verschillende studenten zijn er elk jaar toegelaten om het herstellen van elektromechanische toestellen te leren.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p>Horizon est un centre de formation dédié aux résidents de la Maison d’Accueil, mais aussi aux demandeurs d’emplois externes. Le but est d’acquérir une formation professionnelle de dépannage en électroménager et électromécanique.</p><br/>
+                                        <p>Horizon is een opleidingscentrum voor de bewoners van het Onthaalhuis, maar ze zijn ook open voor externe tewerkstelling. Het doel is om professionele opleidingen in elektriciteit en elektromechanica te verwerven.</p><br/>
 
-                                        <p>Cet atelier donne une chance à ces personnes de se réinsérer dans le monde du travail. La formation dure un an, alliant cours pratiques et théoriques, avec en complément, un mois de stage afin de mettre en pratique tout ce qui a été appris.</p><br/>
+                                        <p>Deze workshop biedt een mogelijkheid aan deze mensen om weer in een werk omgeving te komen. De opleiding duurt een jaar, het is een combinatie van praktische en theoretische cursussen, aangevuld  met een maand stage in de praktijk.</p><br/>
                                     </div>
                                 </div>
                                 <div class="row">
                                      <div class="col-md-4">
-                                        <br/><br/><p>En 2012, sur les 33 stagiaires, 37% ont réussi à trouver un emploi ou à être engagés dans une entreprise. A ce jour, il y a 14 stagiaires en formation.</p><br/>
+                                        <br/><br/><p>In 2012, waren er 33 studenten, 19 van hen zijn nu op zoek naar werk, en 14 zijn nog in opleiding. Van de 19 hebben 37% al een baan gevonden.</p><br/>
 
-                                        <p>A savoir : toutes les machines réparées par l’atelier sont revendues dans les magasins des Petits Riens et garanties 6 mois.</p>
+                                        <p>Goed om te weten : alle machines die hersteld worden op de werkplaats worden verkocht in de winkels van Spullenhulp met een garantie van 6 maanden.</p>
                                     </div>
                                     <div class="col-md-8">
                                         <iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -617,13 +624,13 @@
                 <div class="container">
                     <!-- Start Header -->
                     <div class="header">
-                        <div class="leftcolumn-two-thirds">
-                            <h1>EPICERIE SOCIALE</h1>
+                        <div class="leftcolumn-full">
+                            <h1 class="too_long">SOCIALE KRUIDENIERSWINKEL</h1>
                         </div>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>L’épicerie sociale des Petits Riens a fêté ses 5 ans d’existence en 2012. Depuis son ouverture, c’est Claude, un travailleur bénévole, qui la fait vivre et évoluer.</h2>
+                    <h2>De sociale winkel van Spullenhulp heeft haar 5 -jarig bestaan gevierd in 2012. Sinds zijn opening is het Claude, een vrijwilliger, die hem in staat houdt en doet evolueren.</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <div class="row">
@@ -631,16 +638,16 @@
                                 <br/><iframe src="//player.vimeo.com/video/82605091" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                   
                             </div>
                             <div class="col-md-4">
-                                <p>L’épicerie est là pour offrir un petit « coup de pouce »  aux personnes éprouvant des difficultés financières grâce à ses prix réduits. Ainsi, ces personnes peuvent se consacrer à l’effacement de leurs dettes.</p><br/>
+                                <p>De winkel, die zeer lage prijzen heeft, is een "booster " voor mensen die financiële moeilijkheden hebben. Het is hierdoor gemakkelijker voor hen om hun schulden bij anderen en de banken te verminderen.</p><br/>
 
-                                <p>Ce projet fait partie du CASAF, Centre d’Accueil Social Abbé Froidure, qui est un service d’aide sociale aux familles, basé principalement sur la remise en ordre de papiers administratifs, l’écoute et le suivi psychosocial. </p><br/>
+                                <p>Dit project is een onderdeel van de CASAF, Centre d’Accueil Social Abbé Froidure, die actief is in sociale diensten voor gezinnen, voornamelijk gebaseerd op in orde brengen van papierwerk, luisteren en psychosociale zorg. </p><br/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <p>Toute personne rencontrant des problèmes financiers peut demander une aide alimentaire au CASAF, ce qui leur donnera l’accès à l’épicerie et donc à un choix de plus de 700 aliments et produits ménagers, revendus entre 53 et 58% du prix d’achat.</p><br/>
+                                <p>Iedereen die financiële problemen heeft kan voedselhulp van de CASAF bekomen, ze krijgen dan toegang tot een keuze van meer dan 700 levensmiddelen en huishoudelijke producten, die verkocht worden tussen 53 en 58 % van hun normale prijs.</p><br/>
 
-                                <p>A savoir : l’épicerie sociale est un projet dit « à perte », son coût annuel s’élève à 40 000 €, à charge des Petits Riens qui financent cette action via les dons et le fruit des ventes dans les magasins.
+                                <p>Goed om te weten: de supermarkt is een sociaal project dat verlies maakt, en de jaarlijkse kosten bedragen € 40.000. Spullenhulp financiert dit project door het middel van donaties en de verkoop van producten in zijn winkels.
                                 </p>
                             </div>
                         </div>
@@ -661,37 +668,37 @@
                     <!-- Start Header -->
                     <div class="header">
                         <div class="leftcolumn-two-thirds">
-                            <h1>CONCOURS</h1>
+                            <h1>WEDSTRIJD</h1>
                         </div>
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Voici notre grand jeu concours, grâce auquel vous aurez la possibilité de remporter 5x2 places pour le prochain défilé des Petits Riens :</h2>
+                    <h2>Dit is onze grote wedstrijd, dankzij dewelke u 5x2 plaatsen kan winnen voor de volgende modeshow van Spullenhulp :</h2>
                     <!-- End Feature Text -->
                     <div class="inside">
                         <div class="row">
                             <div class="col-md-4">
-                                <h3>Pour participer...</h3>
+                                <h3>Om deel te nemen...</h3>
 
                                 <ul>
                                     <li>
-                                        <img src="images/one.png"> Rends-toi sur notre page Facebook
+                                        <img src="images/one.png"> Ga op onze Facebook pagina
                                     </li>
                                     <li>
-                                        <img src="images/two.png"> Like et partage la page
+                                        <img src="images/two.png"> Like en share onze pagina
                                     </li>
                                     <li>
-                                        <img src="images/three.png"> Réponds aux questions
+                                        <img src="images/three.png"> Antwoord op de verschillende vragen
                                     </li>
                                 </ul>
                                 <br/>
                                 <br/>
                                 <br/>
                                 <br/>
-                                <h3>BONNE CHANCE A TOUTES ET A TOUS !</h3>                   
+                                <h3>Veel succes aan allen</h3>                   
                             </div>
                             <div class="col-md-8">
-                                <iframe src="https://docs.google.com/forms/d/10pyg0rhZMTDGwbDAHn9P-rT_p493FnNfQNHow7n0pco/viewform?embedded=true" width="550" height="500" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+                                <iframe src="https://docs.google.com/forms/d/146ff6llnorPDD_Zy3Y6IrjXUCEmPG9W3pJ-ap1i5Hls/viewform?embedded=true" width="500" height="550" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
                             </div>
                         </div>
                         <!-- End Right Column -->
@@ -716,23 +723,23 @@
                     </div>
                     <!-- End Header -->
                     <!-- Start Feature Text -->
-                    <h2>Vous désirez nous contacter ?</h2>
+                    <h2>Wenst u contact met ons opnemen ?</h2>  
                     <!-- End Feature Text -->
                     <div class="inside">
                         <!-- Start Left Column -->
                         <div class="leftcolumn-two-thirds">
                             <!-- Start Contact Form -->
-                            <h3>Envoyez-nous un message</h3>
+                            <h3>Stuur ons een bericht</h3>
                             <div style="margin-top:-2px;">
                                     <!--span class="label">Nom</span>
                                     <input type="text" id="name" name="name" class="field text"/>
                                     <span class="label">Email</span>
                                     <input type="text" id="email" name="email" class="field text" value=""/-->
-                                    <span class="label">Sujet</span>
+                                    <span class="label">Onderwerp</span>
                                     <input type="text" id="subject" name="subject" class="field textbig" value=""/>
-                                    <span class="label">Message</span>
+                                    <span class="label">Bericht</span>
                                     <textarea rows="25" cols="45" id="comments" name="comments" class="field"></textarea>
-                                    <input type="submit" id="btnSubmit" name="#btnSubmit" value="Envoyer" class="field button"/>
+                                    <input type="submit" id="btnSubmit" name="#btnSubmit" value="Versturen" class="field button"/>
                             </div>
                             <!-- End Contact Form -->
                         </div>
@@ -742,11 +749,49 @@
                             <h3>Contact</h3>
                             <ul>
                                 <li class="underlined10"><img src="images/icon_phone.png" alt="phone" title="Phone" class="img_spacer"/>02/537.30.26</li>
-                                <li class="underlined10"><a href="mailto:info@petitsriens.be"><img src="images/icon_small_mail.png" alt="email" title="Email" class="img_spacer2"/>info@petitsriens.be</a></li>
-                                <li class="underlined10"><a href="https://twitter.com/spullenhulp"><img src="images/icon_twitter.png" alt="twitter" title="Twitter" class="img_spacer2"/>@Lespetitsriens</a></li>
-                                <li class="underlined10"><a href="https://www.facebook.com/lespetitsriens"><img src="images/icon_fb.png" alt="facebook" title="Facebook" class="img_spacer2"/>Retrouvez-nous sur Facebook</a></li>
+                                <li class="underlined10"><a href="mailto:info@petitsriens.be"><img src="images/icon_small_mail.png" alt="email" title="Email" class="img_spacer2"/>info@spullenhulp.be</a></li>
+                                <li class="underlined10"><a href="https://twitter.com/spullenhulp"><img src="images/icon_twitter.png" alt="twitter" title="Twitter" class="img_spacer2"/>@Spullenhulp</a></li>
+                                <li class="underlined10"><a href="https://www.facebook.com/lespetitsriens"><img src="images/icon_fb.png" alt="facebook" title="Facebook" class="img_spacer2"/>Vindt ons terug op Facebook</a></li>
                             </ul>
                         </div>
+
+                        <div id="addresses" class="row">
+                         <div class="col-md-12">
+                                &nbsp;
+                            </div>
+                            <div class="col-md-12">
+                                <h3>Vindt ons terug op ?</h3>
+                            </div>
+                            <div class="col-md-6">
+                            <ul>
+                                <li>Amerikaansestraat 101 – 1050 Elsene</li>
+                                <li>Retro Paradise : Amerikaansestraat 105 – 1050 Elsene</li>
+                                <li>Baby Paradise : Amerikaansestraat 97 – 1050 Elsene</li>
+                                <li>Bike Paradise : Amerikaansestraat 101 – 1050 Elsene</li>
+                                <li>Zuidstraat 145 - 1000 Brussel - 02/502 58 47</li>
+                                <li>De Wandstraat 191 - 1020 Laken - 02/268 24 99</li>
+                                <li>Helmetsesteenweg 199 - 1030 Schaarbeek - 02/248 16 18</li>
+                                <li>Waversesteenweg 826 - 1040 Etterbeek - 02/647 34 83</li>
+                                <li>Elsense Steenweg 304-306 - 1050 Elsene - 02/644 04 15</li>
+                            </ul>
+                            </div>
+                            <div class="col-md-6">
+                            <ul>
+                                <li>Waterloosesteenweg 149 - 1060 Sint-Gillis - 02/534 79 13</li>
+                                <li>Wayezstraat 100 - 1070 Anderlecht - 02/520 20 55</li>
+                                <li>Jetsesteenweg 683 - 1050 Jette - 02/427 21 08</li>
+                                <li>Vanderkinderestraat 160 - 1180 Ukkel - 02/344 24 42</li>
+                                <li>Georges Henrilaan 228 - 1200 Sint-Lambrechts-Woluwe- 02/733 37 47</li>
+                                <li>Rue Florimond Letroye 3 - 1300 Waver - 010/22 78 75</li>
+                                <li>Rue Paul-Joseph Carpay 26 – 4020 Bressoux | Luik - 04/341 70 65</li>
+                                <li>Rue Leopold 60 - 4820 Dison | Verviers - 087/35 25 35</li>
+                                <li>Rue de Bomel 29 - 5000 Namen - 081/23 16 42</li>
+                            </ul>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+
                         <!-- End Right Column -->
                         <div class="clearfix">
                         </div>

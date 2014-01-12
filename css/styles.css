@@ -62,6 +62,7 @@ ul{list-style-type:none;margin:0;padding-left:0;}
    PAGES
 --------------------------------------     */
 #badge{z-index:2;position:absolute;height:592px;width:883px;left:0;right:0;margin-left:auto;margin-right:auto;background-color:#ff0000;top:5%;background:url('../images/logo_accueil.png') no-repeat}
+#badge-nl{z-index:2;position:absolute;height:592px;width:883px;left:0;right:0;margin-left:auto;margin-right:auto;background-color:#ff0000;top:5%;background:url('../images/logo-mensenhulp.png') no-repeat}
 #badge-text{z-index:3;position:absolute;text-align:center;top:90%;left:0;right:0;margin-left:auto;margin-right:auto;}
 #badge-text a{color:#4D4D4D;font-weight: 700; font-size:1.5em;background-color:#FFF;margin-left:-10%;padding:5px;border: 3px solid #FC0}
 #rectangle{z-index:1;position:absolute;height:100%;width:190px;background-color:rgba(255,204,0,0.6);left:30%;margin:0;padding:0;}
@@ -76,6 +77,8 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 #epicerie_sociale{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg8.jpg) right bottom fixed no-repeat;background-size:cover;}
 #concours{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg9.jpg) right bottom fixed no-repeat;background-size:cover;}
 #contact{-moz-background-size:cover;-ms-text-size-adjust:100%;-o-background-size:cover;-webkit-background-size:cover;-webkit-text-size-adjust:100%;background:url(../images/bg10.jpg) right bottom fixed no-repeat;background-size:cover;}
+#addresses{margin-top:50px;}
+#addresses ul li{list-style-type: circle;margin-top:10px;}
 .header{height:85px;margin:0;padding-top:0;text-align:left;width:100%;}
 .header ul{float:right;list-style-type:none;}
 .bottom_rule {border-bottom:#333333 5px solid; width:920px; height:20px; margin-left:auto; margin-right:auto; position:relative; margin-top:5px;}
@@ -85,6 +88,8 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 /*.inside a:active{color:#000;font-size:.8em;font-weight:700;}
 .inside a:hover{color:#000;font-size:.8em;font-weight:700;}*/
 .overlay{background:url('../images/overlay_diagonal.png') repeat;height:1100px;width:100%;z-index:0;}
+.leftcolumn-full{float:left;width:100%;}
+.too_long{font-size:3em;}
 .leftcolumn-half{float:left;width:47%;}
 .leftcolumn-one-third{float:left;width:31%;}
 .leftcolumn-one-quarter{float:left;width:23%;}
@@ -110,12 +115,16 @@ ul{list-style-type:none;margin:0;padding-left:0;}
   list-style-type:circle;
   padding:4px;
 }
+.div_reg{
+  opacity: 0.9;
+  color:#fff;
+}
 
 /* ----------------------------------------
    NAVIGATION
 --------------------------------------     */
 #logo{
-  float:left;
+  float:right;
   position:absolute;
 }
 #navigation{background:url(../images/overlay_transparent_white.png) repeat; border-bottom: #ffcc00 solid 5px;position:fixed;text-align:left;top:0px; width:920px; left: 50%; margin: 0 0 0 -460px; z-index:100;display: none;}
@@ -140,15 +149,15 @@ ul{list-style-type:none;margin:0;padding-left:0;}
 }
 
 #nav-left ul li img, #nav-right ul li img{
-    width:35px;
-    height:35px;
+    width:30px;
+    height:30px;
 }
 
 #nav-left ul li a, #nav-right ul li a{
     display:block; 
     background-position:center top;
     background-repeat:no-repeat;
-    background-size: 35px;
+    background-size: 30px;
     color:#4D4D4D;
 }
 
@@ -165,8 +174,8 @@ ul{list-style-type:none;margin:0;padding-left:0;}
     margin:0;
     padding:0;
     width: 155px;
-    height: 60px; 
-    padding-top:35px;
+    height: 50px; 
+    padding-top:30px;
     text-align:center;
 }
 /*img.on:hover{filter:alpha(opacity=50);opacity:.5;}*/
@@ -221,7 +230,7 @@ a.rollover:hover .caption{text-indent:0;}
 textarea{font-family:Tahoma, Arial, Helvetica, sans-serif;font-size:.9em;height:154px;width:98%;}
 .button{-webkit-font-smoothing:antialiased;background:#000000;border:none;color:#fff;cursor:pointer;font-family:"Lato", Times, Serif;font-size:.9em;font-style:italic;font-weight:400;line-height:1em; letter-spacing:-.5px;padding:3px 5px 5px;text-transform:none;width:100px; margin-top:15px;}
 .error_message{background:#ccc url('../images/error.gif') no-repeat 10px center;border:1px solid #000;color:#000;display:block;height:20px;line-height:20px;padding:3px 10px 3px 35px;}
-.label{color:#fff;font-size:.7em;}
+.label{color:#4d4d4d;font-size:.9em;}
 .required{color:#006699;font-family:"Lato", Times, Serif;font-size:.6em;font-style:italic;}
 .backslash{padding-top:40px;color:#006699;font-family:"Lato", Times, Serif;font-size:.55em;font-style:italic;letter-spacing:-1px;}
 #success_page h3{background:url(../images/success.gif) no-repeat;padding-left:20px;}
